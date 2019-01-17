@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+<html>
+
+<head><meta name="generator" content="Hexo 3.8.0">
+	<link rel="bookmark" type="image/x-icon" href="/img/logo_miccall.png">
+	<link rel="shortcut icon" href="/img/logo_miccall.png">
+	
+			    <title>
+    ytq520
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/css/mic_main.css">
+    <link rel="stylesheet" href="/css/dropdownMenu.css">
+    <meta name="keywords" content="miccall">
+    
+    	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	 
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css">
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+</head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css">
+<link rel="stylesheet" href="/css/typo.css">
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">ytq520</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special">
+            <ul class="menu links">
+			<!-- Homepage  主页  --> 
+			<li>
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="category-link" href="/categories/Django/">Django</a></li><li><a class="category-link" href="/categories/JavaScript/">JavaScript</a></li><li><a class="category-link" href="/categories/MYSQL/">MYSQL</a></li><li><a class="category-link" href="/categories/MySQL/">MySQL</a></li><li><a class="category-link" href="/categories/html/">html</a></li><li><a class="category-link" href="/categories/python基础/">python基础</a>
+	                    </li></ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/ytq520" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="500px" href="http://500px.com" target="_blank" rel="noopener">
+                            <i class="icon fa fa-500px"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main">
+            <div class="post_page_title_img" style="height: 25rem;background-image: url(/images/thumbs/07.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;">
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2>Django数据库的增删查改</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <h3 id="模型"><a href="#模型" class="headerlink" title="模型"></a>模型</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">from django.db import models</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class Student(models.Model):</span><br><span class="line">    name = models.CharField(max_length=10, unique=True)</span><br><span class="line">    age = models.IntegerField(default=18)</span><br><span class="line">    gender = models.BooleanField(default=1)</span><br><span class="line"></span><br><span class="line">    # auto_now_add: 创建数据时，默认create_time字段为当前时间</span><br><span class="line">    create_time = models.DateTimeField(auto_now_add=True, null=True)</span><br><span class="line">    # auto_now:修改时间，每次update学生信息时，修改该字段的时间为当前时间</span><br><span class="line">    operate_time = models.DateTimeField(auto_now=True, null=True)</span><br><span class="line">    yuwen = models.DecimalField(max_digits=3, decimal_places=1, null=True)</span><br><span class="line">    shuxue = models.DecimalField(max_digits=3, decimal_places=1, null=True)</span><br><span class="line"></span><br><span class="line">    class Meta:</span><br><span class="line">        # 指定student模型映射到数据库中对应的表名</span><br><span class="line">        db_table = &apos;student&apos;</span><br><span class="line"></span><br><span class="line">class StuInfo(models.Model):</span><br><span class="line">    phone = models.CharField(max_length=11)</span><br><span class="line">    address = models.CharField(max_length=100)</span><br><span class="line">    # OneToOneField 等价于 ForeignKey,且约束unique=True</span><br><span class="line">    stu = models.OneToOneField(Student)</span><br><span class="line"></span><br><span class="line">    class Meta:</span><br><span class="line">        db_table = &apos;stu_info&apos;</span><br></pre></td></tr></table></figure>
+<h3 id="视图页面"><a href="#视图页面" class="headerlink" title="视图页面"></a>视图页面</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br></pre></td><td class="code"><pre><span class="line">from django.db.models import Avg, Count, Sum, Max, Min, Q, F</span><br><span class="line">from django.shortcuts import render</span><br><span class="line">from django.http import HttpResponse</span><br><span class="line"># 引入学生student模型</span><br><span class="line">from app.models import Student, StuInfo</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def add_stu(request):</span><br><span class="line">    # 像数据库中的student表中插入数据</span><br><span class="line">    # 第一种方式进行创建：save（）</span><br><span class="line">    # stu = Student()</span><br><span class="line">    # stu.name = &apos;小明&apos;</span><br><span class="line">    # 向数据库中插入一条数据</span><br><span class="line">    # stu.save()</span><br><span class="line"></span><br><span class="line">    # 第二种方式</span><br><span class="line">    Student.objects.create(name=&apos;莫幺儿&apos;, age=19)</span><br><span class="line">    return HttpResponse(&apos;创建成功&apos;)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def del_stu(request):</span><br><span class="line">    # 实现删除</span><br><span class="line">    # sql: del from student where name=&apos;大锤&apos;</span><br><span class="line">    # 1.查询name=‘大锤’的信息</span><br><span class="line">    # Student.objects.filter(name=&apos;大锤&apos;).delete()</span><br><span class="line">    stus = Student.objects.filter(name=&apos;大锤&apos;)</span><br><span class="line">    stus.delete()</span><br><span class="line">    return HttpResponse(&apos;删除成功&apos;)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def up_stu(request):</span><br><span class="line">    # 实现更新</span><br><span class="line">    # 第一种方式</span><br><span class="line">    # stus= Student.objects.filter(name=&apos;莫幺儿&apos;)</span><br><span class="line">    # 获取莫幺儿对象</span><br><span class="line">    # stu = stus[0]</span><br><span class="line">    # stu = Student.objects.filter(name=&apos;小明&apos;).first()</span><br><span class="line">    # stu.name = &apos;狗屎&apos;</span><br><span class="line">    # stu.save()</span><br><span class="line"></span><br><span class="line">    # 第二种方式</span><br><span class="line">    Student.objects.filter(name=&apos;胡歌&apos;).update(name=&apos;莫宇&apos;, age=25)</span><br><span class="line">    return HttpResponse(&apos;更新成功&apos;)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def sel_stu(request):</span><br><span class="line">    # 查询</span><br><span class="line">    # 查询年龄等于18的学生信息</span><br><span class="line">    # first(): 获取结果中的第一个</span><br><span class="line">    # last(): 获取结果中的最后一个</span><br><span class="line">    stus = Student.objects.filter(age=18)</span><br><span class="line"></span><br><span class="line">    # 查询所有学生</span><br><span class="line">    stus = Student.objects.all()</span><br><span class="line"></span><br><span class="line">    # 查询name=xxx 的学生信息</span><br><span class="line">    # git(): 获取唯一的满足条件对象，且查询的条件必须存在</span><br><span class="line">    # 如果查询条件不存在，则报错</span><br><span class="line">    # 如果查询的结果大于一个，则报错</span><br><span class="line">    stu = Student.objects.get(name=&apos;德邦&apos;)</span><br><span class="line"></span><br><span class="line">    # 获取不叫小明的学生信息</span><br><span class="line">    stus = Student.objects.exclude(name=&apos;小明&apos;)</span><br><span class="line"></span><br><span class="line">    # 查询年龄十八且性别为女的学生信息</span><br><span class="line">    stus = Student.objects.filter(age=18).filter(gender=0)</span><br><span class="line">    stus = Student.objects.filter(age=18, gender=0)</span><br><span class="line"></span><br><span class="line">    # 排序order_by</span><br><span class="line">    # 降序 -id 在sql中是id desc</span><br><span class="line">    # 升序 id，在sql中 id asc</span><br><span class="line">    stus = Student.objects.all().order_by(&apos;-id&apos;)</span><br><span class="line"></span><br><span class="line">    # 获取对象的值</span><br><span class="line">    stus_value = Student.objects.all().values()</span><br><span class="line"></span><br><span class="line">    # 判断name= 妲己 的学生存不存在,存在返回True, 不存在返回False</span><br><span class="line"></span><br><span class="line">    stu = Student.objects.filter(name=&apos;妲己&apos;).exists()</span><br><span class="line"></span><br><span class="line">    # 查询姓名中包含‘小’的学生信息，contains</span><br><span class="line">    # contains : 大小写敏感</span><br><span class="line">    # icontains: 大小写不敏感</span><br><span class="line">    # 类似于like &apos;%小%&apos;</span><br><span class="line">    stu = Student.objects.filter(name__contains=&apos;小&apos;)</span><br><span class="line"></span><br><span class="line">    # 类似于like &apos;%小&apos;</span><br><span class="line">    stus = Student.objects.filter(name__endswith=&apos;小&apos;)</span><br><span class="line"></span><br><span class="line">    # 类似于like &apos;小 %&apos;</span><br><span class="line">    stus = Student.objects.filter(name__startswith=&apos;小&apos;)</span><br><span class="line"></span><br><span class="line">    # sql: select * from xxx where id in （1,2,3）</span><br><span class="line">    stus = Student.objects.filter(id__in=[1, 2, 3])</span><br><span class="line"></span><br><span class="line">    # pk代表主键</span><br><span class="line">    stus = Student.objects.filter(pk__in=[1, 2, 3])</span><br><span class="line"></span><br><span class="line">    # 大于: __gt__、大于等于: __gte__</span><br><span class="line">    # 小于: __lt__、小于等于：__lte__</span><br><span class="line">    stus = Student.objects.filter(age__lt=19)</span><br><span class="line"></span><br><span class="line">    # 查询平均年龄</span><br><span class="line">    stus = Student.objects.all()</span><br><span class="line">    ages = 0</span><br><span class="line">    for stu in stus:</span><br><span class="line">        ages += stu.age</span><br><span class="line">    avg_age=ages / len(stus)</span><br><span class="line">    print(avg_age)</span><br><span class="line"></span><br><span class="line">    # 聚合aggregate</span><br><span class="line">    avg_age = Student.objects.all().aggregate(Avg(&apos;age&apos;))</span><br><span class="line">    print(avg_age)</span><br><span class="line"></span><br><span class="line">    # sql:select count(age), sum(age), max(age), min(age) from student;</span><br><span class="line">    sum_age = Student.objects.all().aggregate(Sum(&apos;age&apos;))</span><br><span class="line">    count_age = Student.objects.all().aggregate(Count(&apos;age&apos;))</span><br><span class="line">    max_age = Student.objects.all().aggregate(Max(&apos;age&apos;))</span><br><span class="line">    min_age = Student.objects.all().aggregate(Min(&apos;age&apos;))</span><br><span class="line">    print(sum_age, count_age, max_age, min_age)</span><br><span class="line"></span><br><span class="line">    # 或者条件、非条件、并且条件</span><br><span class="line">    # 查询age=18 并且 gender=1的学生信息</span><br><span class="line">    # Q()</span><br><span class="line">    # 导入包：from django.db.models import Q</span><br><span class="line">    stus = Student.objects.filter(Q(age=18), Q(gender=1))</span><br><span class="line"></span><br><span class="line">    stus = Student.objects.filter(Q(age=18) &amp; Q(gender=1))</span><br><span class="line">    # 查询age=18 或者 gender=1的学生信息</span><br><span class="line">    stus = Student.objects.filter(Q(age=18) | Q(gender=1))</span><br><span class="line">    # 查询满足age！=18 或者gender=1的条件</span><br><span class="line">    stus = Student.objects.filter(~Q(age=18) | Q(gender=1))</span><br><span class="line"></span><br><span class="line">    # 查询语文成绩比数学成绩好的学生信息</span><br><span class="line">    # F()</span><br><span class="line">    stus = Student.objects.filter(yuwen__gt=F(&apos;shuxue&apos;))</span><br><span class="line"></span><br><span class="line">    # 查询语文成绩比数学成绩高十分的学生信息</span><br><span class="line">    stus = Student.objects.filter(yuwen__gt=F(&apos;shuxue&apos;) + 10)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    # 获取学生的姓名</span><br><span class="line">    stu_names = [stu.name for stu in stus]</span><br><span class="line"></span><br><span class="line">    return HttpResponse(stu_names)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def add_stu_info(request):</span><br><span class="line"></span><br><span class="line">    # StuInfo.objects.create(phone=&apos;13681927364&apos;, address=&apos;四川省成都市&apos;, stu_id=6)</span><br><span class="line"></span><br><span class="line">    s_info = StuInfo()</span><br><span class="line">    s_info.phone = &apos;15451685412&apos;</span><br><span class="line">    s_info.address = &apos;天府新区&apos;</span><br><span class="line">    # s_info.stu_id = 1</span><br><span class="line">    s_info.stu = Student.objects.get(pk=5)</span><br><span class="line">    s_info.save()</span><br><span class="line"></span><br><span class="line">    return HttpResponse(&apos;创建拓展成功&apos;)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def sel_info_by_stu(request):</span><br><span class="line">    # 通过学生信息查拓展表信息</span><br><span class="line">    # 查询小花的电话号码</span><br><span class="line">    # sql: select stu_info.phone from student,stu_info</span><br><span class="line">    # where student.id=stu_info.stu_id</span><br><span class="line"></span><br><span class="line">    # sql2</span><br><span class="line">    # select phone from stu_info,(select id from student) as  a</span><br><span class="line">    # where stu_info.stu_id=a.id</span><br><span class="line"></span><br><span class="line">    stu = Student.objects.filter(name=&apos;小花&apos;).first()</span><br><span class="line">    # 第一种方法</span><br><span class="line">    # stu_info = StuInfo.objects.filter(stu_id=stu.id).first()</span><br><span class="line">    stu_info = StuInfo.objects.filter(stu=stu).first()</span><br><span class="line">    phone = stu_info.phone</span><br><span class="line"></span><br><span class="line">    # 第二种反向查询</span><br><span class="line">    stu_info = stu.stuinfo</span><br><span class="line">    phone = stu_info.phone</span><br><span class="line">    return HttpResponse(phone)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def sel_stu_by_info(request):</span><br><span class="line">    # 查询phone=13681927364的学生信息</span><br><span class="line">    stu_info = StuInfo.objects.get(phone=&apos;13681927364&apos;)</span><br><span class="line">    stu = stu_info.stu</span><br><span class="line">    return HttpResponse(&apos;通过拓展表查询学生信息&apos;)</span><br></pre></td></tr></table></figure>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+                <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>
