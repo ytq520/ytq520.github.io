@@ -1,0 +1,199 @@
+<!DOCTYPE HTML>
+<html>
+
+<head><meta name="generator" content="Hexo 3.8.0">
+	<link rel="bookmark" type="image/x-icon" href="/img/logo_miccall.png">
+	<link rel="shortcut icon" href="/img/logo_miccall.png">
+	
+			    <title>
+    ytq520
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/css/mic_main.css">
+    <link rel="stylesheet" href="/css/dropdownMenu.css">
+    <meta name="keywords" content="miccall">
+    
+    	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	 
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css">
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+</head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css">
+<link rel="stylesheet" href="/css/typo.css">
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">ytq520</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special">
+            <ul class="menu links">
+			<!-- Homepage  主页  --> 
+			<li>
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="category-link" href="/categories/python基础/">python基础</a>
+	                    </li></ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/ytq520" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="500px" href="http://500px.com" target="_blank" rel="noopener">
+                            <i class="icon fa fa-500px"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main">
+            <div class="post_page_title_img" style="height: 25rem;background-image: url(/images/thumbs/15.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;">
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2>类的使用</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <p>###一、类的继承<br>python中类支持继承，并且支持多继承</p>
+<p>####1.什么是继承<br>父类(超类)：被继承的类<br>子类：去继承父类的类<br>继承就是让子类直接拥有父类的属性和方法(注意：继承后父类的东西不会减少~)。<br>python中所有的类都是直接或者间接的继承自object</p>
+<p>####2.怎么继承<br>class 类名(父类):….<br>class 类名:  ==  class 类名(object):</p>
+<p>####3.能继承哪些东西<br>对象属性、对象方法、类的字段、类方法、静态方法都可以继承</p>
+<p>注意：如果设置了<strong>slots</strong>会约束当前类的对象属性，并且会导致当前类的对象的<strong>dict</strong>属性不存在；<br>     继承后，<strong>slots</strong>的值不会约束到子类的对象属性，但是会导致子类对象的<strong>dict</strong>只有在当前类中添加的属性<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line">class Person:</span><br><span class="line">    num = 61</span><br><span class="line">    __numbers = 61</span><br><span class="line"></span><br><span class="line">    # __slots__ = (&apos;name&apos;, &apos;age&apos;, &apos;__sex&apos;)</span><br><span class="line"></span><br><span class="line">    def __init__(self, name=&apos;小明&apos;, age=18):</span><br><span class="line">        self.name = name</span><br><span class="line">        self.age = age</span><br><span class="line">        self.__sex = &apos;boy&apos;</span><br><span class="line"></span><br><span class="line">    def eat(self, food: str):</span><br><span class="line">        print(&apos;%s在吃%s&apos; % (self.name, food))</span><br><span class="line"></span><br><span class="line">    @staticmethod</span><br><span class="line">    def func1():</span><br><span class="line">        print(&apos;Person的静态方法&apos;)</span><br><span class="line"></span><br><span class="line">    @classmethod</span><br><span class="line">    def show_num(cls):</span><br><span class="line">        print(&apos;人类数量:%d亿&apos; % cls.num)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class Student(Person):</span><br><span class="line">    def __init__(self):</span><br><span class="line">        super().__init__()</span><br><span class="line">        self.socre = 100</span><br><span class="line"></span><br><span class="line"># 创建Person类的对象</span><br><span class="line">p1 = Person()</span><br><span class="line"># p1.id = &apos;001&apos;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 创建Student类的对象</span><br><span class="line">stu1 = Student()</span><br><span class="line"></span><br><span class="line">print(stu1.name, stu1.age)</span><br><span class="line">stu1.eat(&apos;面条&apos;)</span><br><span class="line"></span><br><span class="line">print(Student.num)</span><br><span class="line">Student.show_num()</span><br><span class="line">Student.func1()</span><br><span class="line"></span><br><span class="line">print(stu1.__dict__)</span><br><span class="line"></span><br><span class="line">stu1.id = &apos;001&apos;</span><br></pre></td></tr></table></figure></p>
+<p>###二、重写</p>
+<p>继承后子类会拥有父类的属性和方法，也可以添加属于自己的属性和方法</p>
+<p>####1.添加新的方法<br>直接在子类中声明新的方法，新的方法只能通过子类来使用</p>
+<p>####2.重写<br>a.子类继承父类的方法，在子类中去重新实现这个方法的功能 – 完全重写<br>b.在子类方法中通过super().父类方法去保留父类对应的方法的功能</p>
+<p>####3.类中的函数的调用过程<br>类.方法(), 对象.方法()</p>
+<p>先看当前类是否有这个方法，如果有就直接调用当前类中相应的方法；<br>如果没有就去当前的父类中去看有没有这个方法，如果有就调用父类的这个方法；<br>如果父类中也没有这个方法，就去父类的父类中找，依次类推直到找到为止。<br>如果找到基类object，还没有找到这个方法，程序才异常</p>
+<p>#####例子：<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br></pre></td><td class="code"><pre><span class="line">class Person:</span><br><span class="line"></span><br><span class="line">    def __init__(self, name=&apos;&apos;):</span><br><span class="line">        self.name = name</span><br><span class="line"></span><br><span class="line">    def eat(self, food):</span><br><span class="line">        # self = super()</span><br><span class="line">        print(&apos;%s在吃%s&apos; % (self.name,  food))</span><br><span class="line"></span><br><span class="line">    @staticmethod</span><br><span class="line">    def run():</span><br><span class="line">        print(&apos;人在跑步&apos;)</span><br><span class="line"></span><br><span class="line">    @classmethod</span><br><span class="line">    def get_up(cls):</span><br><span class="line">        print(&apos;===========&apos;)</span><br><span class="line">        print(&apos;洗漱&apos;)</span><br><span class="line">        print(&apos;换衣服&apos;)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class Staff(Person):</span><br><span class="line">    pass</span><br><span class="line"></span><br><span class="line">class Student(Person):</span><br><span class="line"></span><br><span class="line">    def study(self):</span><br><span class="line">        print(&apos;%s在学习&apos; % self.name)</span><br><span class="line"></span><br><span class="line">    def eat(self, food):</span><br><span class="line">        # super():当前类的父类的对象</span><br><span class="line">        print(&apos;对象方法:&apos;,super())</span><br><span class="line">        super().eat(food)</span><br><span class="line">        print(&apos;喝一杯牛奶!&apos;)</span><br><span class="line"></span><br><span class="line">    @staticmethod</span><br><span class="line">    def run():</span><br><span class="line">        print(&apos;学生在跑步&apos;)</span><br><span class="line"></span><br><span class="line">    @classmethod</span><br><span class="line">    def get_up(cls):</span><br><span class="line">        # super() -&gt; 获取当前类的父类</span><br><span class="line">        # super().get_up() -&gt;调用父类的get_up方法</span><br><span class="line">        print(&apos;类方法&apos;, super())</span><br><span class="line">        super().get_up()  # 可以保留父类get_up的功能</span><br><span class="line">        print(&apos;背书包&apos;)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">p1 = Person()</span><br><span class="line">Person.run()</span><br><span class="line">Person.get_up()</span><br><span class="line">p1.name = &apos;小红&apos;</span><br><span class="line">p1.eat(&apos;面条&apos;)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">stu1 = Student()</span><br><span class="line">stu1.study()</span><br><span class="line">Student.run()</span><br><span class="line">Student.get_up()</span><br><span class="line"></span><br><span class="line">stu1.name = &apos;小花&apos;</span><br><span class="line">stu1.eat(&apos;面包&apos;)</span><br></pre></td></tr></table></figure></p>
+<p>###三、添加属性</p>
+<p>####1.添加字段：<br>就直接在子类中声明新的字段</p>
+<p>####2.添加对象对象属性<br>子类是通过继承父类的init方法来继承的父类的对象属性</p>
+<p>#####例如<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">class Car:</span><br><span class="line">    def __init__(self, color):</span><br><span class="line">        print(&apos;Car:&apos;,self)</span><br><span class="line">        # self = Car对象, color = &apos;黑色&apos;</span><br><span class="line">        self.color = color</span><br><span class="line">        self.price = 10</span><br><span class="line"></span><br><span class="line">    num = 10</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class SportsCar(Car):</span><br><span class="line">    # 修改字段的默认值</span><br><span class="line">    num = 8</span><br><span class="line">    # 添加字段</span><br><span class="line">    wheel_count = 4</span><br><span class="line"></span><br><span class="line">    # 给子类添加新的对象属性</span><br><span class="line">    def __init__(self, horsepower,color):</span><br><span class="line">        print(&apos;SpCar:&apos;,self)</span><br><span class="line">        # self = sp1, horsepower = 100, color=&apos;黑色&apos;</span><br><span class="line">        # 通过super()去调用父类的init方法，用来继承父类的对象属性</span><br><span class="line">        super().__init__(color)  # Car对象.__init__(&apos;黑色&apos;)</span><br><span class="line">        self.horsepower = horsepower  # self.horsepower = 100</span><br><span class="line"></span><br><span class="line">print(Car.num)</span><br><span class="line">SportsCar.num = 19</span><br><span class="line">print(SportsCar.num, SportsCar.wheel_count)</span><br><span class="line"></span><br><span class="line"># 当子类没有中没有声明init方法，通过子类的构造方法创建对象的时候会自动调用父类的init方法。</span><br><span class="line">sp1 = SportsCar(100, &apos;黑色&apos;)</span><br><span class="line">print(sp1.color)</span><br><span class="line"></span><br><span class="line">print(sp1)</span><br></pre></td></tr></table></figure></p>
+<h5 id="练习："><a href="#练习：" class="headerlink" title="练习："></a>练习：</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">声明一个Person类，有属性名字、年龄和身份证号码。</span><br><span class="line"># 要求创建Person的对象的时候，必须给名字赋值，年龄和省份证可以赋值也可以不赋</span><br><span class="line"># Person(&apos;小明&apos;)</span><br><span class="line"># Person(&apos;xiaoming&apos;, 18)</span><br><span class="line"># Perosn(&apos;小红&apos;, 18, &apos;28283983&apos;)</span><br><span class="line"></span><br><span class="line"># 声明一个学生类，有属性名字、年龄、身份证号码和学号，成绩(用继承)</span><br><span class="line"># 要求创建学生的时候，必须给学号赋值，可以给年龄，名字赋值，不能给省份证号，和成绩赋值</span><br><span class="line"># Student(&apos;stu001&apos;, 18, &apos;mingzi&apos;)</span><br><span class="line"># Student(&apos;stu001&apos;, 18)</span><br><span class="line"># Student(&apos;stu001&apos;, name=&apos;mingzi&apos;)</span><br><span class="line">class Person:</span><br><span class="line">    def __init__(self, name, age=0, id=&apos;&apos;):</span><br><span class="line">        self.name = name</span><br><span class="line">        self.age = age</span><br><span class="line">        self.id = id</span><br><span class="line"></span><br><span class="line"># p2 = Person() # TypeError: __init__() missing 1 required positional argument: &apos;name&apos;</span><br><span class="line">p1 = Person(&apos;小明&apos;)</span><br><span class="line">p2 = Person(&apos;小红&apos;, 10, &apos;344&apos;)</span><br><span class="line"></span><br><span class="line">class Student(Person):</span><br><span class="line">    def __init__(self, study_id, age=0, name=&apos;&apos;):</span><br><span class="line">        super().__init__(name, age)</span><br><span class="line">        self.study_id = study_id</span><br><span class="line">        self.score = 0</span><br><span class="line"></span><br><span class="line">stu1 = Student(&apos;001&apos;)</span><br></pre></td></tr></table></figure>
+<p>###四、运算符的重载</p>
+<p>运算符重载: 通过实现类响应的魔法方法，来让类的对象支持相应的运算符(+, -, &gt; ,&lt; 等)</p>
+<p>值1 运算符 值2 —&gt; 值1.魔法方法(值2)</p>
+<p>#####例如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br></pre></td><td class="code"><pre><span class="line">import copy</span><br><span class="line">import random</span><br><span class="line"></span><br><span class="line">class Student:</span><br><span class="line">    def __init__(self, name, age, score):</span><br><span class="line">        self.name = name</span><br><span class="line">        self.age = age</span><br><span class="line">        self.score = score</span><br><span class="line"></span><br><span class="line">    #  __gt__就是 &gt; 对应的魔法方法</span><br><span class="line">    def __gt__(self, other):</span><br><span class="line">        # self -&gt; 指的是大于符号前面的值， other -&gt; 指的是&gt;符号后面的值</span><br><span class="line">        return self.score &gt; other.score</span><br><span class="line"></span><br><span class="line">    # __lt__是 &lt; 对应的魔法方法</span><br><span class="line">    # 注意：gt和lt只需要实现一个就可以了</span><br><span class="line">    def __lt__(self, other):</span><br><span class="line">        return self.score &lt; other.score</span><br><span class="line"></span><br><span class="line">    def __add__(self, other):</span><br><span class="line">        return self.score + other.score</span><br><span class="line"></span><br><span class="line">    # __mul__是 * 对应的魔法方法</span><br><span class="line">    def __mul__(self, other: int):</span><br><span class="line">        result = []</span><br><span class="line">        for _ in range(other):</span><br><span class="line">            result.append(copy.copy(self))</span><br><span class="line">        return result</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">stu1 = Student(&apos;小哈&apos;, 23, 89)</span><br><span class="line">stu2 = Student(&apos;小🌺&apos;, 19, 90)</span><br><span class="line">print(stu1 &gt; stu2)</span><br><span class="line">print(stu1 &lt; stu2)</span><br><span class="line"></span><br><span class="line">print(stu1 + stu2)</span><br><span class="line"></span><br><span class="line">students = stu1*10</span><br><span class="line">print(students)</span><br><span class="line">students[0].name = &apos;小明&apos;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class Person:</span><br><span class="line">    def __init__(self, name=&apos;张三&apos;, age=0):</span><br><span class="line">        self.name = name</span><br><span class="line">        self.age = age</span><br><span class="line"></span><br><span class="line">    def __mul__(self, other: int):</span><br><span class="line">        result = []</span><br><span class="line">        for _ in range(other):</span><br><span class="line">            result.append(copy.copy(self))</span><br><span class="line">        return result</span><br><span class="line"></span><br><span class="line">    def __gt__(self, other):</span><br><span class="line">        return self.age &gt; other.age</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    # 定制打印格式</span><br><span class="line">    def __repr__(self):</span><br><span class="line">        return str(self.__dict__)[1:-1]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 同时创建10个人的对象</span><br><span class="line">persons = Person()*10</span><br><span class="line"># persons = 10 * Person()</span><br><span class="line"># print(persons)</span><br><span class="line"></span><br><span class="line">for p in persons:</span><br><span class="line">    p.age = random.randint(15, 35)</span><br><span class="line"></span><br><span class="line">print(persons)</span><br><span class="line"></span><br><span class="line"># 列表元素是类的对象，使用sort对列进行排序</span><br><span class="line">persons.sort()</span><br><span class="line">print(persons)</span><br><span class="line"></span><br><span class="line">print(max(persons))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class Dog:</span><br><span class="line">    def __mul__(self, other):</span><br><span class="line">        pass</span><br><span class="line"></span><br><span class="line">dog1 = Dog()</span><br><span class="line">dog1 * 4</span><br><span class="line"># 4 * dog1  # 实现不了</span><br></pre></td></tr></table></figure></p>
+<p>###五、内存管理机制<br>python中的内存管理 –&gt; 自动管理 –&gt; 垃圾回收机制</p>
+<p>内存结构中分栈区间和堆区间，栈区间中内存是系统自动开启自动释放。堆区间的内存需要手动申请手动释放。<br>但是目前绝大部分编程语言，都提供了一套属于自己的关于堆中的内存的管理方案<br>–&gt; python中垃圾回收机制是用来管理堆中的内存的释放</p>
+<p>python中的数据都是存在堆中的，数据的地址都是在栈区间。</p>
+<p>####1.内存的开辟<br>python中将值赋给变量的是，会先在堆中开辟空间将数据存起来，然后再数据对应的地址返回给变量，存在栈中。<br>但是如果数据是数字和字符串，会先缓存区中查看这个数据之前是否已经创建过，如果没有就去创建空间存数据，然后将地址返回。<br>如果之前已经创建过就直接将之前的地址返回</p>
+<p>####2.内存的释放 –&gt; 垃圾回收机制<br>系统每隔一定的时间就会去检测当前程序中所有的对象的引用计数值是否为0；<br>如果对象的引用计数是0对象对应的内存就会被销毁，如果不是0就不销毁</p>
+<p>####3.引用计数<br>每一个对象都有引用计数属性，用来存储当前对象被引用的次数。<br>可以通过sys模块中的getrefcount去获取一个对象的引用计数值</p>
+<p>增引用计数：</p>
+<p>#####例如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">from sys import getrefcount</span><br><span class="line"></span><br><span class="line">c = [1, 2]</span><br><span class="line">d = [1, 2]</span><br><span class="line">print(id(c), id(d))</span><br><span class="line"></span><br><span class="line">a = 100</span><br><span class="line">b = 100</span><br><span class="line">print(id(a), id(b))</span><br><span class="line"></span><br><span class="line">s1 = &apos;abc&apos;</span><br><span class="line">s2 = &apos;abc&apos;</span><br><span class="line">print(id(s1), id(s2))</span><br><span class="line"></span><br><span class="line">aaa = [1, 2, 3]</span><br><span class="line">print(getrefcount(aaa))</span><br><span class="line">aaa1 = [1, 2, 3]</span><br><span class="line">aaa2 = [1, 2, 3]</span><br><span class="line">aaa3 = [1, 2, 3]</span><br><span class="line">print(getrefcount(aaa))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">bbb = 10</span><br><span class="line">print(getrefcount(bbb))</span><br><span class="line">ccc = 10</span><br><span class="line">ddd = 10</span><br><span class="line">print(getrefcount(bbb))</span><br><span class="line"></span><br><span class="line"># 1.增加引用计数：增加引用(增加保存当前对象地址的变量的个数)</span><br><span class="line">a1 = [&apos;abc&apos;]</span><br><span class="line">b1 = a1</span><br><span class="line">list1 = [a1, 100]</span><br><span class="line">print(getrefcount(a1))</span><br><span class="line"></span><br><span class="line"># 2.减少引用计数</span><br><span class="line">del b1   # 删除存储对象地址的变量</span><br><span class="line">print(getrefcount(a1))</span><br><span class="line"></span><br><span class="line">list1[0] = 10   # 修改存储对象地址变量的值</span><br><span class="line">print(getrefcount(a1))</span><br><span class="line"></span><br><span class="line">a1 = 100</span><br></pre></td></tr></table></figure></p>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+                <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>

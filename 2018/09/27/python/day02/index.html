@@ -1,0 +1,398 @@
+<!DOCTYPE HTML>
+<html>
+
+<head><meta name="generator" content="Hexo 3.8.0">
+	<link rel="bookmark" type="image/x-icon" href="/img/logo_miccall.png">
+	<link rel="shortcut icon" href="/img/logo_miccall.png">
+	
+			    <title>
+    ytq520
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/css/mic_main.css">
+    <link rel="stylesheet" href="/css/dropdownMenu.css">
+    <meta name="keywords" content="miccall">
+    
+    	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	 
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css">
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+</head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css">
+<link rel="stylesheet" href="/css/typo.css">
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">ytq520</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special">
+            <ul class="menu links">
+			<!-- Homepage  主页  --> 
+			<li>
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="category-link" href="/categories/python基础/">python基础</a>
+	                    </li></ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/ytq520" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="500px" href="http://500px.com" target="_blank" rel="noopener">
+                            <i class="icon fa fa-500px"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main">
+            <div class="post_page_title_img" style="height: 25rem;background-image: url(/images/thumbs/02.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;">
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2>进制的认识和运算</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <h4 id="一、复习昨天所学内容"><a href="#一、复习昨天所学内容" class="headerlink" title="一、复习昨天所学内容"></a>一、复习昨天所学内容</h4><p>1.常用快捷键</p>
+<p>2.注释</p>
+<p>3.标识符</p>
+<p>数字、字母、_组成，数字不能开头（python大小写敏感）</p>
+<p>4.缩进:</p>
+<blockquote>
+<p>name = ‘小明’</p>
+</blockquote>
+<p>5.常用的数据类型：</p>
+<blockquote>
+<p>int, float, bool, str,list, dict, tuple, set,fucntion等</p>
+</blockquote>
+<p>type()函数， 类型名()</p>
+<p>6.变量</p>
+<p>变量名 = 值</p>
+<blockquote>
+<p>number = 100</p>
+<p>number = 18 * 2 + 3</p>
+<p>number = 100 &gt; 20</p>
+<p>number = name</p>
+<p>a = b = c = 100</p>
+<p>a,b = 10</p>
+<p>a = 10; b = 100</p>
+</blockquote>
+<p>7.运算符</p>
+<p>数学(+,-,<em>,/,%,//,**)、比较(&gt;,&lt;,==,!=,&gt;=,&lt;=)、逻辑(and,or,not)、赋值(=, +=, -=, </em>=….)</p>
+<blockquote>
+<p>score = 79</p>
+<p>print(60 &lt;= score &lt;= 100)</p>
+<p>print(score&gt;=60 and score &lt;= 100)</p>
+</blockquote>
+<h4 id="二、进制"><a href="#二、进制" class="headerlink" title="二、进制"></a>二、进制</h4><p>进制：计算机在存储数字的时候都是以二进制的形式去存的(十进制、十六进制、八进制、二进制)</p>
+<p>1.十进制</p>
+<blockquote>
+<p>100，78 ，245545 ，445545454848</p>
+</blockquote>
+<p>基数：0，1，2，3，4，5，6，7，8，9</p>
+<p>进位：逢十进一</p>
+<p>每一位的值：</p>
+<p>123=1<em>100+2</em>20+3<em>1=1</em>10^2+2<em>10^1+3</em>10^0</p>
+<p>111=1<em>10^0+1</em>10^1+1*10^2=11</p>
+<p>2.二进制</p>
+<p>所有的二进制数都是由0和1组成：011001</p>
+<p>基础：0,1</p>
+<p>进位：逢二进一  4=100  11=1011</p>
+<p>每一位的值：11011=1<em>2^0+1</em>2^1+0<em>2^2+1</em>2^3+1*2^4=27</p>
+<p>3.八进制</p>
+<p>基数：0，1，2，3，4，5，6，7</p>
+<p>进位：逢八进一</p>
+<p>每一位的值：111=1<em>8^0+1</em>8^1+1*8^2=73</p>
+<p>4.十六进制</p>
+<p>基数：0，1，2，3，4，5，6，7，8，9，A,,B,C,D,E,F</p>
+<p>进位：逢十六进一</p>
+<p>每一位的值：111=1<em>16^0+1</em>16^1+1*16^2=273</p>
+<p>进制之间的转换</p>
+<p>a.其他进制转换为10进制：每一位上的数乘以进制幕次数，然后求和</p>
+<p>b.十进制转其他进制：辗转去余法</p>
+<blockquote>
+<p>123:(2）001111011    60:(2)111100</p>
+<p>123:(8)173</p>
+<p>123:(16)7B</p>
+</blockquote>
+<p>c.二进制转八进制：每三位二进制转换为一位</p>
+<p>八转二：一位八进制转换为三位得二进制</p>
+<blockquote>
+<p>(8)671 –&gt;(2)110 111 001</p>
+</blockquote>
+<p>d.二进制转十六进制：每四位二进制转换为一位</p>
+<p>八转二：一位十六进制转换为四位位得二进制</p>
+<blockquote>
+<p>(16)67 –&gt;(2) 01100111</p>
+</blockquote>
+<p>6.puython对进制的支持</p>
+<p>python支持通过二进制、八进制、十进制和十六进制的形式来直接表示整数</p>
+<p>a.十进制：直接写大的数字都是十进制的数</p>
+<p>b.二进制：需要加前缀 -&gt; 0b</p>
+<blockquote>
+<p>例如：0b1010</p>
+</blockquote>
+<p>c.八进制：需要加前缀 -&gt; 0o/0O</p>
+<blockquote>
+<p>例如：0o67</p>
+</blockquote>
+<p># d.十六进制：需要加前缀 -&gt; 0x/0X</p>
+<blockquote>
+<p>例如：0x78af</p>
+</blockquote>
+<p>e.进制的转换(结果是字符串)</p>
+<p>bin(整数) –&gt; 将括号中的整数，转换成二进制形式</p>
+<blockquote>
+<p>print(bin(10), bin(0o56), bin(0xaf)) </p>
+<p>输出结果为：0b1010 0b101110 0b10101111</p>
+</blockquote>
+<p>oct(整数) –&gt; 将括号中的整数，转换成八进制形式</p>
+<blockquote>
+<p>print(oct(10), oct(0b110110), oct(0xaf))</p>
+<p>输出结果为：0o12 0o66 0o257</p>
+</blockquote>
+<p># hex(整数) –&gt; 将括号中的整数，转换成十六进制形式</p>
+<blockquote>
+<p>print(hex(10), hex(0b110110), hex(0o56))</p>
+<p>输出结果为：0xa 0x36 0x2e</p>
+</blockquote>
+<h4 id="三、原码反码和补码"><a href="#三、原码反码和补码" class="headerlink" title="三、原码反码和补码"></a>三、原码反码和补码</h4><p>注意：计算机在存数字的时候，存的是数字的二进制的补码，计算机内存的最小单位是位：1位只能存储两个状态</p>
+<p>8位 = 1字节 </p>
+<p>a.原码：整数数字的二进制形式</p>
+<p>十进制的10的原码就是:1010</p>
+<p>最高位是符号位，如果正数符号位为0，负数符号位为1</p>
+<blockquote>
+<p>10的原码  00000000 00001010</p>
+<p>-10的原码 10000000 00001010</p>
+</blockquote>
+<p>b.反码</p>
+<p>正数的反码是它的原码</p>
+<p>负数的反码就是这个数的原码的符号位不变，然后其他位置上的数取反(0-&gt;1,1-&gt;0)</p>
+<blockquote>
+<p>-10 -&gt; (原码)10000000 00001010 -&gt;(反码)11111111 11110101</p>
+</blockquote>
+<p>c.补码</p>
+<p>正数的补码就是它的原码</p>
+<p>负数的补码是它的反码加1</p>
+<blockquote>
+<p>-10 -&gt; (反码)11111111 11110101 -&gt; (补码)1111111 11110110</p>
+</blockquote>
+<p>总结：正的反码和补码都是原码;负数的补码是反码加1，反码是原码符号位不变，其他位取反</p>
+<p>为什么计算机存储数据的时候存补码？：因为计算机中只有加法器，只能进行加操作。存原码对负数进行加操作的时候有问题</p>
+<p>四、位运算</p>
+<p> 注意：计算存数字存补码，计算的时候也是补码，最后结果看的时候看原码</p>
+<p>位运算符：&amp;(按位与)，|(按位或), ^(异或), ~(取反), &gt;&gt;(右移)， &lt;&lt;(左移)</p>
+<p>1.&amp;(按位与)</p>
+<p>数字1 &amp; 数字2 ：两个都为1结果才是1，否则为0</p>
+<blockquote>
+<p>3 &amp; 2 –&gt; 00000011 &amp; 00000010 == 00000010</p>
+<p>-3 &amp; 2 –&gt; 11111101 &amp; 00000010  == 00000000</p>
+</blockquote>
+<p>作用：让指定位上数置零，或者保留某一位上的值</p>
+<p>2.|(按位或)</p>
+<p>数字1 | 数字2: 只要有一个为1，结果就是1；两个都为，结果才是0</p>
+<blockquote>
+<p>3 | 2 –&gt; 00000011 | 00000010 = 00000011</p>
+<p>-3 | 2 –&gt; 11111101 | 00000010 = (补)11111111 = (原)10000001</p>
+</blockquote>
+<p>3.^(异或)</p>
+<p>数字1 ^ 数字2: 不同为1，相同为0</p>
+<blockquote>
+<p>3^2 –&gt; 00000011 ^ 00000010 = 00000001</p>
+<p>-3^2 –&gt; 11111101 ^ 00000010 = (补)11111111 = 10000001</p>
+</blockquote>
+<p>4.~(取反)</p>
+<p>~数字： 将每一位取反</p>
+<blockquote>
+<p>~3 —&gt; ~00000011 = 11111100(补) =  10000100</p>
+<p>~-3 —&gt; ~11111101 = 00000010</p>
+</blockquote>
+<p>5.左移(重点掌握)</p>
+<p>数字 &lt;&lt; 位数: 将补码向左移动指定的位数，符号位不变，在最后面补指定个数的0</p>
+<p>规律(正数和负数都实用)：m &lt;&lt; n ==  m * (2^n)</p>
+<blockquote>
+<p>num <em> 2 == num &lt;&lt; 1 num </em> 4 == num &lt;&lt; 2</p>
+</blockquote>
+<p>6.右移</p>
+<p>数字 &gt;&gt; 位数: 将补码向右移动指定的位数，符号位不变，在符号位的后面补指定个数的0(正)或者1(负)</p>
+<p>规律(只适用于正数)：m &gt;&gt; n == m // (2^n)</p>
+<p>五、字符串(str)</p>
+<p>1.什么是字符串？</p>
+<p>python中通过单引号或者上引号引起来的字符集就是字符串</p>
+<p>字符串中引号中的字符集，就是又各种不同的字符来组成的。</p>
+<blockquote>
+<p>例如：’abhsjjd’，’26238’，’海金沙’，’^&amp;#@(@&amp;@*’，’😆’，’in’，’223hdu话说接电话**&amp;&amp;’，</p>
+</blockquote>
+<p>2.Unicode编码</p>
+<p>python中字符串中字符采用的是Unicode编码</p>
+<p>Unicode编码：是通过两个字节来对一个字符进行编码(0~ 2^16-1)。它几乎包含了世界上所有的符号</p>
+<p>ASCII编码：是通过一个字节来对一个字符进行编码</p>
+<p> Unicode编码和ASCII编码的区别：Unicode编码中包含了ASCII码表</p>
+<p>a.  chr(数字): 获取数字在Unicode编码表中对应的字符,返回的是只有一个字符的字符串</p>
+<p>b.  ord(字符): 获取字符对应的Unicode码</p>
+<p>c . 可以直接在字符串中写字符对应的编码值，格式：\u四位的十六进制</p>
+<blockquote>
+<p>例如：str1 = ‘ah\u4e00\u4e01jhuu’</p>
+<p>print(str1)     输出结果为：一丁</p>
+</blockquote>
+<p>3.转义字符(适用于所有语言)</p>
+<p>一些特能和具有特殊意义的字符，直接放在字符串的引号中无效，需要通过\来转义</p>
+<p>\n —&gt; 换行</p>
+<p>\’ —-&gt; 表示\’本身</p>
+<p>\t —-&gt; 制表符（相当于Tab键）</p>
+<p>\ —-&gt; 表示\本身</p>
+<p>\” —-&gt; 表示”本身</p>
+<h4 id="六、day3作业"><a href="#六、day3作业" class="headerlink" title="六、day3作业"></a>六、day3作业</h4><p>1.下列四组数，依次为二进制、八进制和十六进制，符合要求的是（d）</p>
+<p>a. 12,  77,  10</p>
+<p>b. 12,  80,  10</p>
+<p>c. 11,  78,  19</p>
+<p>d. 11,  77,  19</p>
+<p>2.二进制数加法运算的基本特点是“逢二进一”，即0+0=0，0+1=1，1+0=1，1+1=0并进位。运用这一基本法则和十进制运算的类似规律，得出二进制数加法运算1001+101的结果为(c)</p>
+<p>a. 1001</p>
+<p>b. 1010</p>
+<p>c. 1110</p>
+<p>d. 1101</p>
+<p>7.八进制754中的数码7对应的位权是(c)</p>
+<p>a.  10^2   b. 16^1   c. 8^2  d. 2^2</p>
+<p>8.十进制数53转换成二进制数是(b)</p>
+<p>a. 100101</p>
+<p>b. 110101</p>
+<p>c.100100</p>
+<p>d.110100</p>
+<p>9.(偏难)已知，十进制中的8在X进制中表示为11，即(10)8=(X)11。请问这个X进制具体为(b)进制</p>
+<p>a. 6</p>
+<p>b. 7</p>
+<p>c. 8</p>
+<p>d. 9</p>
+<p>10.二进制的1000001相当十进制的(④ 65)，二进制的100.001可以表示为(  ④ 2^2+2^–3 )。</p>
+<p>A:  ① 62  ② 63  ③ 64  ④ 65</p>
+<p>B:  ① 2^3+2^–3  ② 2^2+2^–2 ③ 2^3+2^–2 ④ 2^2+2^–3</p>
+<p>11.使用位运算判断一个数是否是奇数</p>
+<p>注：奇数的二进制的最后一位是1，偶数是0</p>
+<blockquote>
+<p>假设一位数为x</p>
+<p>print(1&amp;x)   结果为1   这个数为奇数</p>
+<p>print(1&amp;x)   结果为0   这个数为偶数</p>
+</blockquote>
+<p>12.表达式0x13&amp;0x17的值是（ 0001 0011）</p>
+<p>13.若x=2,y=3则x&amp;y的结果是（0000 0010  ）</p>
+<p>14.表达式 ord(‘a’) | ord(‘z’) 的运算结果是( 01111011)</p>
+<p>15.在位运算中，操作数每右移一位，其结果相当于（B ）</p>
+<p>A.操作数乘以2     B.操作数除以2</p>
+<p>C.操作数除以4     D.操作数乘以4</p>
+<p>16.设x 是一个整数（16位）.若要通过x|y使x低度8位置1，高8位不变，则y的二进制数是（ 0000 0000 1111 1111）</p>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+                <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>

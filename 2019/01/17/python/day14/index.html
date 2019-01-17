@@ -1,0 +1,188 @@
+<!DOCTYPE HTML>
+<html>
+
+<head><meta name="generator" content="Hexo 3.8.0">
+	<link rel="bookmark" type="image/x-icon" href="/img/logo_miccall.png">
+	<link rel="shortcut icon" href="/img/logo_miccall.png">
+	
+			    <title>
+    ytq520
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/css/mic_main.css">
+    <link rel="stylesheet" href="/css/dropdownMenu.css">
+    <meta name="keywords" content="miccall">
+    
+    	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	 
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css">
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+</head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css">
+<link rel="stylesheet" href="/css/typo.css">
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">ytq520</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special">
+            <ul class="menu links">
+			<!-- Homepage  主页  --> 
+			<li>
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="category-link" href="/categories/python基础/">python基础</a>
+	                    </li></ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/ytq520" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="500px" href="http://500px.com" target="_blank" rel="noopener">
+                            <i class="icon fa fa-500px"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main">
+            <div class="post_page_title_img" style="height: 25rem;background-image: url(/images/thumbs/14.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;">
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2>类和对象</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <p>###一、类方法和静态方法<br>类中的方法：对象方法、类方法和静态方法</p>
+<p>#####1.对象方法：<br>a.直接声明在类中<br>b.自带参数self<br>c.通过对象来调用</p>
+<p>#####2.类方法：<br>a.声明在@classmethod后面的函数就是类方法<br>b.自带参数cls(cls在函数调用的时候不用传参，系统会自动将调用这个方法的类赋给它)<br>c.通过类来调用</p>
+<p>#####3.静态方法：<br>a.声明在@staticmethod后面的函数就是静态方法<br>b.没有自带的参数<br>c.通过类来调用</p>
+<p>#####4.怎么选择使用哪种方法（重点!）：<br>对象方法：如果实现函数的功能需要用到对象的属性，那么就把这个函数声明成对象方法<br>静态方法和类方法：实现函数的功能不需要用到对象的属性，就可以选择用静态方法或者类方法<br>类方法：在不使用对象属性的前提下，需要使用类<br>静态方法：既不需要对象的属性也不需要类<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">class Number:</span><br><span class="line">    def __init__(self):</span><br><span class="line">        self.value = 0</span><br><span class="line">        self.type = int</span><br><span class="line">        self.id = None</span><br><span class="line"></span><br><span class="line">    @staticmethod</span><br><span class="line">    def max():</span><br><span class="line">        return 100</span><br><span class="line"></span><br><span class="line">    @staticmethod</span><br><span class="line">    def min():</span><br><span class="line">        return -100</span><br><span class="line"></span><br><span class="line">num = Number()</span><br><span class="line">num.value = 1000</span><br><span class="line">print(Number.max())</span><br></pre></td></tr></table></figure></p>
+<h5 id="求圆的面积"><a href="#求圆的面积" class="headerlink" title="求圆的面积"></a>求圆的面积</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">class Math:</span><br><span class="line">    pi = 3.1415926</span><br><span class="line">    @classmethod</span><br><span class="line">    def circle_area(cls,radius):</span><br><span class="line">        return cls.pi * radius ** 2</span><br><span class="line">    @staticmethod</span><br><span class="line">    def sum(num1, num2):</span><br><span class="line">        return num1 + num2</span><br><span class="line">print(Math.circle_area(3))</span><br><span class="line">print(Math.circle_area(4))</span><br></pre></td></tr></table></figure>
+<p>#####求矩形的面积<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">class Rect:</span><br><span class="line">    def __init__(self, length, width):</span><br><span class="line">        self.length = length</span><br><span class="line">        self.width = width</span><br><span class="line"></span><br><span class="line">    def area(self):</span><br><span class="line">        return self.length * self.width</span><br></pre></td></tr></table></figure></p>
+<p>#####对象方法、类方法、静态方法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">class Person:</span><br><span class="line">    num = 61</span><br><span class="line">    # 声明一个类方法</span><br><span class="line">    @classmethod</span><br><span class="line">    def destroy(cls):</span><br><span class="line">        # cls指向的是当前类。调用这个方法的类可以做的事情，cls都能做</span><br><span class="line">        print(&apos;cls:&apos;,cls, cls.num)</span><br><span class="line">        p2 = cls()</span><br><span class="line">        print(p2)</span><br><span class="line">        print(&apos;人类破坏环境&apos;)</span><br><span class="line">    # 声明一个静态方法</span><br><span class="line">    @staticmethod</span><br><span class="line">    def func1():</span><br><span class="line">        print(Person.num)</span><br><span class="line">        p3 = Person()</span><br><span class="line">        print(p3)</span><br><span class="line">        print(&apos;人类的静态方法&apos;)</span><br></pre></td></tr></table></figure></p>
+<p>###二、私有化<br>类中的内容默认都是公开的（在类的外面可以使用）</p>
+<p>#####1.私有化 - 将类的内容在类的外面隐藏<br>在类中方法名或者属性名前加两个下划线(不能以两个下划线结束)<br>私有的方法和属性只能在类的内部使用，不能在类的外部使用</p>
+<p>#####2.私有的原理<br>python中没有真正的私有化(没有从访问权限上去限制内容的访问)<br>私有的原理就是在私有的属性名或者方法名前加前缀’_类名’来阻止外部直接通过带两个下划线的名字去使用属性和方法</p>
+<p>#####例如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">class Person:</span><br><span class="line">    # 私有字段</span><br><span class="line">    __num = 61</span><br><span class="line">    def __init__(self, name, age):</span><br><span class="line">        self.name = name</span><br><span class="line">        # 私有对象属性</span><br><span class="line">        self.__age = age</span><br><span class="line"></span><br><span class="line">    def show_info(self):</span><br><span class="line">        print(self.__age)</span><br><span class="line">        self.__func1()</span><br><span class="line"></span><br><span class="line">    # 私有的对象方法</span><br><span class="line">    def __func1(self):</span><br><span class="line">        print(&apos;私有对象方法&apos;)</span><br><span class="line"></span><br><span class="line">p1 = Person(&apos;小明&apos;, 23)</span><br><span class="line">print(p1.name)</span><br><span class="line">p1.show_info()</span><br><span class="line"># print(p1.__age)</span><br><span class="line"></span><br><span class="line"># print(Person.__num)</span><br><span class="line">print(p1.__dict__)</span><br><span class="line">print(p1._Person__age)</span><br></pre></td></tr></table></figure></p>
+<p>###三、getter和setter</p>
+<p>#####1.什么时候需要添加对象属性的getter和setter<br>如果希望在通过对象.属性获取属性的值之前，再干点儿别的事情，就可以给这个属性添加getter。<br>如果希望在通过对象.属性给属性赋值之前，再干点儿别的事情，就可以给这个属性添加setter</p>
+<p>#####2.怎么添加setter和getter<br>getter:<br>a.在属性名前加_<br>b.添加属性对应的getter<br>@property<br>def 属性名去掉_(self):<br>    函数体 –&gt; 会对属性的值进行处理后，返回相应的结果(必须要有返回值)</p>
+<p>c.使用属性的值的时候，不通过带下划线的属性名去使用，而是通过没有下划线的属性去使用</p>
+<p>注意：对象.不带下划线的属性 –&gt; 调用getter对应的函数</p>
+<p>setter:<br>如果想要添加setter必须要先添加getter<br>a.添加setter<br>@getter名.setter<br>def 属性名去掉_(self, 参数):<br>    做别的事情<br>    self.属性名 = 处理后的值<br><figure class="highlight plain"><figcaption><span>Number:</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line">    def __init__(self):</span><br><span class="line">        self._value = 0</span><br><span class="line">        # 0-6保存</span><br><span class="line">        self._week = 3</span><br><span class="line">        self.type = int</span><br><span class="line">        self.id = None</span><br><span class="line">    # _value添加getter和setter</span><br><span class="line">    @property</span><br><span class="line">    def value(self):</span><br><span class="line">        return self._value</span><br><span class="line">    @value.setter</span><br><span class="line">    def value(self, x):</span><br><span class="line">        if not -100 &lt;= x &lt;= 100:</span><br><span class="line">            raise ValueError</span><br><span class="line">        self._value = x</span><br><span class="line">    # _week的getter</span><br><span class="line">    @property</span><br><span class="line">    def week(self):</span><br><span class="line">        if self._week == 0:</span><br><span class="line">            return &apos;星期天&apos;</span><br><span class="line">        elif self._week == 1:</span><br><span class="line">            return &apos;星期一&apos;</span><br><span class="line">        elif self._week == 2:</span><br><span class="line">            return &apos;星期二&apos;</span><br><span class="line">        elif self._week == 3:</span><br><span class="line">            return &apos;星期三&apos;</span><br><span class="line">        elif self._week == 4:</span><br><span class="line">            return &apos;星期四&apos;</span><br><span class="line">        elif self._week == 5:</span><br><span class="line">            return &apos;星期五&apos;</span><br><span class="line">        elif self._week == 6:</span><br><span class="line">            return &apos;星期六&apos;</span><br><span class="line"></span><br><span class="line">    &quot;&quot;&quot;</span><br><span class="line">    isinstance(值, 类) --&gt; 判断指定的值是否是指定类型(返回值是bool)</span><br><span class="line">    &quot;&quot;&quot;</span><br><span class="line">    @week.setter</span><br><span class="line">    def week(self, value):</span><br><span class="line">        # 如果传的值不是整型数据</span><br><span class="line">        if not isinstance(value, int):</span><br><span class="line">            raise ValueError</span><br><span class="line">        if not 0 &lt;= value &lt;= 6:</span><br><span class="line">            raise ValueError</span><br><span class="line"></span><br><span class="line">        self._week = value</span><br><span class="line">number = Number()</span><br><span class="line">number.value = 99</span><br><span class="line">print(number.week)  # number.week 实质是在通过number去调用getter对应的week方法</span><br><span class="line">number.week = 1  # number.week = 值  实质是通过number去调用setter对应的week方法</span><br><span class="line">number.value = 100</span><br><span class="line">print(number.value)</span><br></pre></td></tr></table></figure></p>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+                <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>

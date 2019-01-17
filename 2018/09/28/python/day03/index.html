@@ -1,0 +1,425 @@
+<!DOCTYPE HTML>
+<html>
+
+<head><meta name="generator" content="Hexo 3.8.0">
+	<link rel="bookmark" type="image/x-icon" href="/img/logo_miccall.png">
+	<link rel="shortcut icon" href="/img/logo_miccall.png">
+	
+			    <title>
+    ytq520
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/css/mic_main.css">
+    <link rel="stylesheet" href="/css/dropdownMenu.css">
+    <meta name="keywords" content="miccall">
+    
+    	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	 
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css">
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+</head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css">
+<link rel="stylesheet" href="/css/typo.css">
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">ytq520</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special">
+            <ul class="menu links">
+			<!-- Homepage  主页  --> 
+			<li>
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="category-link" href="/categories/python基础/">python基础</a>
+	                    </li></ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/ytq520" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="500px" href="http://500px.com" target="_blank" rel="noopener">
+                            <i class="icon fa fa-500px"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main">
+            <div class="post_page_title_img" style="height: 25rem;background-image: url(/images/thumbs/03.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;">
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2>字符串的学习</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <h4 id="一、复习昨天所学习的内容"><a href="#一、复习昨天所学习的内容" class="headerlink" title="一、复习昨天所学习的内容"></a>一、复习昨天所学习的内容</h4><p>1.字符串(str)</p>
+<p>什么是字符串？</p>
+<p>通过双引号或者单引号引起来的内容就是字符串</p>
+<p>2.Unicode编码</p>
+<p>a.python中的字符串中字符采用的是Unicode编码，Unicode编码，是通过两个字节来对一个字符进行编码,他几乎包含了世界上所有的符号。</p>
+<p>b.ASCII编码：通过一个字节来对一个字符进行编码</p>
+<p>c.Unicode编码表中包含了ASCII编码表</p>
+<p>d.chr(数字)：获取数字在Unicode编码表中对应的字符，返回的是只有一个字符的字符串。</p>
+<p>e.ord(字符)：获取字符对应的Unicode编码。</p>
+<h4 id="二、字符串中的元素"><a href="#二、字符串中的元素" class="headerlink" title="二、字符串中的元素"></a>二、字符串中的元素</h4><p>1.阻止转义</p>
+<p>在字符串的最前面可以添加r/R来阻止字符串中的转义字符转义</p>
+<blockquote>
+<p>str1=r’how are you\n fine’</p>
+<p>print(str1)    结果为： how are you\n fine</p>
+</blockquote>
+<p>2.python中可以把字符串看成是一个序列(容器)，容器中的内容是字符，每一个字符可以称为字符串中的元素</p>
+<p>字符串是一个不可变的序列，有序(不可变指的是字符串中的每个字符，以及每个字符的位置不可变)</p>
+<p>3.获取字符串中的单个字符</p>
+<p>语法：字符串(下标)  –&gt; 根据下标获取字符串中的字符</p>
+<p>说明：a.字符串：可以是字符串的变量也可以是字符串值</p>
+<p>​           b.[]:固定写法</p>
+<p>​           c.下标：0~字符串长度-1；-1 ~ -长度</p>
+<p>注意：下标是整数；并且下标不能越界</p>
+<p>python中每个字符串中的字符都会对应一个下标，下标是根据字符在字符串中的位置，从前往后依次增加的(第一个)</p>
+<blockquote>
+<p>str3=’python’</p>
+<p>p-&gt;0 y-&gt;1 t—&gt;2 …..n-&gt;5</p>
+<p>n-&gt;-1 o-&gt;-2 h-&gt;-3 ……p-&gt;-6</p>
+<p>print(str3[3])       获取正数3+1个元素           输出结果为： h</p>
+<p>print(str3[-2])      获取倒数第二个字符(元素)  输出结果为：o</p>
+<p>print(‘hello’[-1])    获取hello倒数第一个字符     输出结果为：o</p>
+<p>index=2</p>
+<p>print(str3[index])                                                输出的结果为：t</p>
+<p>print(str3[6//2])                                                   输出结果为：h</p>
+<p>输出结果为：h、o、o、t、h</p>
+</blockquote>
+<p>练习：获取’gond good study\n day day up!’</p>
+<p>注意：一个空格算一个字符，一个转义字符算一个字符，一个制表符也是算一个字符</p>
+<blockquote>
+<p>str4=’gond good study\n day day up!’</p>
+<p>print(str4[-11],str4[17])</p>
+<p>输出的结果为：d、d</p>
+</blockquote>
+<p>4.获取字符串中的部分字符(切片)</p>
+<p> a.语法：字符串[起始下标：结束下标] –&gt;获取字符串中从起始下标开始，到结束下标结束下标前的所有的字符(默认步长为1)</p>
+<p>注意：起始下标对应的字符要在结束下标对应的字符前面，否取不到值</p>
+<blockquote>
+<p>str5=’同九年,汝何秀！’</p>
+<p>print(str5[1:5])</p>
+<p>print(str5[5:-1])</p>
+<p>输出的结果为：九年,汝</p>
+</blockquote>
+<p>b.语法：字符串[起始下标：结束下标：步长] –&gt;从起始下标开始获取，每步长获取一个获取到结束下标前为止</p>
+<p>步长为正：从前往后取(起始下标对应的字符要在结束下标对应的字符前面，否取不到值)</p>
+<p>步长为负：从后往前取(起始下标对应的字符要在结束下标对应的字符后面，否取不到值)</p>
+<blockquote>
+<p>str5=’海贼王、一拳超人、一人之下、进击的巨人’</p>
+<p>print(str5[1:10:2])  结果为：贼、拳人一</p>
+<p>print(str5[10:1:-2])  结果为：人、超一王</p>
+</blockquote>
+<p> c.切片时下标可以省略，省略不同的下标有不同意义</p>
+<p>省略起始下标：字符串[：结束下标]  —&gt;从开头开始取(注意：这儿开头可能是第一个字符也可能是最后一个字符)</p>
+<blockquote>
+<p>str6=’阁下和不同风起，扶摇直上九万里’</p>
+<p>print(str6[:4])      结果为：阁下和不</p>
+<p>print(str6[:4:-1])    结果为：里万九上直摇扶，起风</p>
+</blockquote>
+<p>省略结束下标：字符[起始下标：]  –&gt;从开始下标取，取完为止</p>
+<blockquote>
+<p>print(str6[-4:])        结果为：上九万里</p>
+<p>print(str6[-4::-1])    结果为：上直摇扶，起风同不和下阁</p>
+</blockquote>
+<p>两个下标都省：字符[:] –&gt;全部取完</p>
+<blockquote>
+<p>print(str6[:])        结果为：阁下和不同风起，扶摇直上九万里</p>
+<p>print(str6[::-1])    结果为：里万九上直摇扶，起风同不和下阁</p>
+<p>str7=str6[::-1]</p>
+<p>print(str7)           结果为：里万九上直摇扶，起风同不和下阁</p>
+</blockquote>
+<p>注意：切片的时候可以越界</p>
+<h4 id="三、字符串运算符-（-、-和比较运算符）"><a href="#三、字符串运算符-（-、-和比较运算符）" class="headerlink" title="三、字符串运算符 （+、*和比较运算符）"></a>三、字符串运算符 （+、*和比较运算符）</h4><p>1.字符串的+号运算符</p>
+<p>字符串1+字符串2 –&gt;将字符串1和字符串2拼接在一起产生一个新的字符串</p>
+<p>注意：如果加好两边要么都是数字，要么都是字符串，不能一样一个</p>
+<blockquote>
+<p>str1=’玉树临风美少男’</p>
+<p>str2=’揽镜自顾夜不眠’</p>
+<p>print(str1+str2)                 输出的结果为：玉树临风美少男揽镜自顾夜不眠</p>
+<p>print(str1+’,’+str2+’!’)         输出的结果为：玉树临风美少男，揽镜自顾夜不眠！</p>
+</blockquote>
+<p>2.*</p>
+<p>字符串1*n —&gt;字符串1重复出现n次，产生一个新的字符串</p>
+<p>n必须是整数</p>
+<blockquote>
+<p>str3=’家有千金，行止由心！’</p>
+<p>print(str3*3)  输出的结果为：家有千金，行止由心！家有千金，行止由心！家有千金，行止由心！</p>
+</blockquote>
+<p>先算乘再算加</p>
+<blockquote>
+<p>str4=str1+str3*2</p>
+<p>print(str4)   输出的结果为：玉树临风美少男家有千金，行止由心！家有千金，行止由心！</p>
+</blockquote>
+<p>比较运算符</p>
+<p>判断相等</p>
+<blockquote>
+<p>print(‘abc’==’abc’)   判断两个字符串的值是否相等</p>
+<p>print(‘abc’!=’ab’)    输出的结果为：True</p>
+</blockquote>
+<p>字符串比较大小:比较两个字符串中从前往后每个字符的编码值得大小，比较两个字符不相同为止</p>
+<blockquote>
+<p>print(‘zabc’&gt;’zab’)  输出的结果为：True</p>
+</blockquote>
+<p>判断一个字符是否是数字字符，判断一个字符是否是字母字符</p>
+<blockquote>
+<p>char=’H’</p>
+<p>print(‘0’&lt;=char&lt;=’9’)   判断char是否是数字字符   输出的结果为：False</p>
+<p>print(‘a’&lt;=char&lt;=’z’ or ‘A’&lt;=char&lt;=’Z’)  判断char是否是字母   输出的结果为：True</p>
+</blockquote>
+<p>4.in和not in</p>
+<p># 字符串1 in 字符串2 —-&gt;判断字符串1是否在字符串2中(字符串2中是否包含字符串1)，结果是布尔值</p>
+<blockquote>
+<p>print(‘ab’in’aaabc’)  输出的结果：True</p>
+<p>print(‘ab’in’acb’)  输出的结果为：False</p>
+</blockquote>
+<p>5.len()函数</p>
+<p>len是python内置函数，功能·是用来获取序列的长度(容器中元素的个数)（len(序列)）</p>
+<p>字符串的长度就是字符串中字符的个数</p>
+<blockquote>
+<p>print(len(‘hello’))  输出的结果为： 5</p>
+</blockquote>
+<p>str5=’床前明月光\n疑是地上霜！’</p>
+<blockquote>
+<p>print(len(str5))               输出的结果为：12</p>
+<p>print(str5[len(str5)-1])    输出的结果为：！</p>
+<p>print(str5[-len(str5)])      输出的结果为：床</p>
+</blockquote>
+<h4 id="四、格式字符串"><a href="#四、格式字符串" class="headerlink" title="四、格式字符串"></a>四、格式字符串</h4><p>字符串内部，通过格式占位符来表示字符串变化的部分，然后在后面用值来填充变化的部分</p>
+<p>语法：带有占位符的字符串%(给占位符赋值的值)</p>
+<p>注意：前有多少个占位符，后面()中就必须有多少值。并且值的个数和值的类型要和前面的占位符一一对应</p>
+<p>a.%s —&gt;字符串</p>
+<p>b.%d —&gt;整数</p>
+<p>c.%f —&gt;小数</p>
+<p>d.%.nf –&gt;保留小数点后面n位小数(五舍六入)</p>
+<blockquote>
+<p>name=’李四’</p>
+<p>age=20</p>
+<p>money=10.567</p>
+<p>message=’姓名：%s 年龄%d 薪资%.2f’ %(name,age,money)</p>
+<p>print(message)          输出的结果为：姓名：李四 年龄20 薪资10.57</p>
+<p>print(‘%d:%c’ % (97,97))               输出的结果为：97：a</p>
+</blockquote>
+<p>五、字符串的内置函数</p>
+<p>python内部给我们提供很多字符串相关的方法，使用方式：字符串。方法名(参数名)</p>
+<p>1.capitalize()：将字符串的第一个字符转换为大写，返回一个新的字符串</p>
+<p>注意：如果第一个字符不是字母，就不转换</p>
+<blockquote>
+<p>str1=’love’</p>
+<p>new_str=str1.capitalize()</p>
+<p>print(new_str)       输出的结果为：Love</p>
+</blockquote>
+<p>2.字符串对齐</p>
+<p>a.center(width,fillchar)</p>
+<p>b.ljust(with,fillchar)</p>
+<p>c.rjust(width,fillchar)</p>
+<p>width –&gt; 长度，新字符串的总共的长度  fillchar–&gt;剩下部分字符就是长度是1的字符串长度(只能填单个字符)</p>
+<blockquote>
+<p>str2=’xxx’</p>
+<p>new_str=str2.center(7,’0’)</p>
+<p>print(new_str)      输出的结果为： 00xxx00</p>
+<p>new_str=str2.ljust(7,’0’)</p>
+<p>print(new_str)    输出的结果为：xxx0000</p>
+<p>new_str=str2.rjust(7,’0’)</p>
+<p>print(new_str)   输出的结果为：   0000xxx</p>
+</blockquote>
+<p>练习：根据进班顺序产生对应的学号。学号要求</p>
+<blockquote>
+<p>例如：num=1 —&gt;python18070001 num=11 –&gt;python18070011</p>
+<p>num=’11’</p>
+<p>new=’python1807’+str(num).rjust(4,’0’)</p>
+<p>print(new)     输出的答案为：python18070011</p>
+</blockquote>
+<p>3.字符串1.count(zi字符串2) –&gt;统计字符串1中字符串2的个数</p>
+<blockquote>
+<p>print(‘abcdabcdaaaa’.count(‘ab’))  输出的结果为： 2</p>
+<p>print(‘hello world’.count(‘l’))           输出的结果为：3</p>
+</blockquote>
+<p>4..字符串1.endswith(字符串2) —&gt;判断字符串1是否以字符串2结尾</p>
+<p>​    字符串1.startswith(字符串2) —&gt;判断字符串1是否以字符串2开头</p>
+<blockquote>
+<p>str1=’when i was’</p>
+<p>print(str1.endswith(‘as’))          输出的结果为：True</p>
+<p>print(str1.endswith(‘when’))     输出的结果为：False</p>
+</blockquote>
+<p>5.字符串1.find(字符串2)–&gt;在字符串1中查找字符串2，返回第一个到的开始下标，如果没有就返回-1</p>
+<blockquote>
+<p>str1=’when i was young,i have a dream’</p>
+<p>print(str1.find(‘was’))         输出的结果为：7</p>
+<p>print(str1.find(‘wasaa’))       输出结果为： -1</p>
+</blockquote>
+<p>6.isnumeric()</p>
+<p>数字表示True中文也行，其他表示False</p>
+<blockquote>
+<p>print(‘1234’.isnumeric())  输出的结果为：True</p>
+</blockquote>
+<p> 7.isTitle()</p>
+<p>标题化：每个单词首字母大写，其他字母小写</p>
+<p>8.字符串1.join(字符串2)  –&gt;将字符串1插入到字符串2中每个字符之间，产生一个新的字符串</p>
+<blockquote>
+<p>print(‘aaa’.join(‘xyz’))  输出的结果为： xaaayaaaz</p>
+</blockquote>
+<h4 id="六、day4作业"><a href="#六、day4作业" class="headerlink" title="六、day4作业"></a>六、day4作业</h4><p>1.个性化消息: 将用户的姓名存到一个变量中，并向该用户显示一条消息。显示的消息应非常简单，如“Hello Eric, would you like to learn some Python today?”。</p>
+<blockquote>
+<p>name=’Eric’</p>
+<p>print(‘hello ‘+name+’,’+’would you like to learn some Python today?’)</p>
+</blockquote>
+<p>\2. 调整名字的大小写: 将一个人名存储到一个变量中，再以小写、大写和首字母大写的方式显示这个人名。</p>
+<blockquote>
+<p>name=’tom’</p>
+<p># 首字母大写</p>
+<p>new_name=name.capitalize()</p>
+<p>print(new_name)    输出为：Tom</p>
+<p># 小写方式</p>
+<p>new_name=name.lower()</p>
+<p>print(new_name)     输出为：tom</p>
+<p>#大写方式</p>
+<p>new_name=name.upper()</p>
+<p>print(new_name)    输出的为：TOM</p>
+</blockquote>
+<p>\3. 名言: 找一句你钦佩的名人说的名言，将这个名人的姓名和他的名言打印出来。输出应类似于下面这样(包括引号):</p>
+<blockquote>
+<p>celebrity=’邓小平’</p>
+<p>str1= ‘“不管黑猫白猫，捉住老鼠就是好猫”’</p>
+<p>print(celebrity+’曾说过：’+str1)</p>
+<p>#  邓小平曾说过：“ 不管黑猫白猫，捉住老鼠就是好猫 ”</p>
+</blockquote>
+<p>4.名言2: 重复练习3，但将名人的姓名存储在变量famous_person 中，再创建要显示的消息，并将其存储在变量message 中，然后打印这条消息。</p>
+<blockquote>
+<p>famous_person=’邓小平’</p>
+<p>str1= ‘“不管黑猫白猫，捉住老鼠就是好猫.”’</p>
+<p>message=famous_person+’曾说过：’+str1</p>
+<p>print(message)</p>
+<p># 邓小平曾说过：“ 不管黑猫白猫，捉住老鼠就是好猫 ”</p>
+</blockquote>
+<p>\5. 剔除人名中的空白: 存储一个人名，并在其开头和末尾都包含一些空白字符。务必至少使用字符组合”\t” 和”\n” 各一次。 打印这个人名，以显示其开头和末尾的空白。然后，分别使用剔除函数lstrip() 、rstrip() 和strip() 对人名进行处理，并将结果打印出来。</p>
+<blockquote>
+<p>name = ‘ \n\t 小明 \t\n ‘</p>
+<p>print(name)</p>
+<p>print(name.lstrip())</p>
+<p>print(name.rstrip())</p>
+<p>print(name.strip())</p>
+<p>结果为：</p>
+<p>​        小明</p>
+<p>小明          </p>
+<p>​        小明        </p>
+<p>小明                    </p>
+</blockquote>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+                <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>

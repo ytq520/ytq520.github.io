@@ -1,0 +1,203 @@
+<!DOCTYPE HTML>
+<html>
+
+<head><meta name="generator" content="Hexo 3.8.0">
+	<link rel="bookmark" type="image/x-icon" href="/img/logo_miccall.png">
+	<link rel="shortcut icon" href="/img/logo_miccall.png">
+	
+			    <title>
+    ytq520
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/css/mic_main.css">
+    <link rel="stylesheet" href="/css/dropdownMenu.css">
+    <meta name="keywords" content="miccall">
+    
+    	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	 
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css">
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+</head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css">
+<link rel="stylesheet" href="/css/typo.css">
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">ytq520</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special">
+            <ul class="menu links">
+			<!-- Homepage  主页  --> 
+			<li>
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="category-link" href="/categories/python基础/">python基础</a>
+	                    </li></ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/ytq520" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="500px" href="http://500px.com" target="_blank" rel="noopener">
+                            <i class="icon fa fa-500px"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main">
+            <div class="post_page_title_img" style="height: 25rem;background-image: url(/images/thumbs/08.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;">
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2>拷贝、函数</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <p>###一、浅拷贝和深拷贝</p>
+<p>####1、拷贝：将变量中的值复制一份，产生新的数据，然后将新的数据对应的地址返回</p>
+<p>#####a、copy.copy(对象):浅拷贝：直接拷贝地址(切片和字典列表的copy方法都是浅拷贝)</p>
+<p>#####b、copy.deepcopy(对象)：深拷贝：将地址对应值拷贝，产生新的地址</p>
+<p>###二、字典和列表的应用<br>列表的元素和字典的值可以是任何类型的元素</p>
+<p>####1、列表中有字典<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">persons = [</span><br><span class="line">    &#123;&apos;name&apos;: &apos;张三&apos;, &apos;age&apos;: 30, &apos;sex&apos;: &apos;男&apos;&#125;,</span><br><span class="line">    &#123;&apos;name&apos;: &apos;李四&apos;, &apos;age&apos;: 28, &apos;sex&apos;: &apos;女&apos;&#125;,</span><br><span class="line">    &#123;&apos;name&apos;: &apos;王五&apos;, &apos;age&apos;: 40, &apos;sex&apos;: &apos;男&apos;&#125;,</span><br><span class="line">]</span><br><span class="line">print(persons)</span><br><span class="line">print(persons[1][&apos;name&apos;])</span><br></pre></td></tr></table></figure></p>
+<p>#####a练习：找出persons中年龄最大的人的名字<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">max = 0</span><br><span class="line">name=&apos;&apos;</span><br><span class="line">for index in persons:</span><br><span class="line">    age = index[&apos;age&apos;]</span><br><span class="line">    if age &gt; max1:</span><br><span class="line">        max1 = age</span><br><span class="line">        name = index[&apos;name&apos;]</span><br><span class="line">print(name, max1)</span><br><span class="line">输出的结果为：王五 40</span><br></pre></td></tr></table></figure></p>
+<p>####2.字典中有列表<br>练习：写一个程序，保存一个班级的信息，包含班级名，位置，所有学生(学生中需要保存名字，年龄和学校)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">my_class = &#123;</span><br><span class="line">    &apos;class_name&apos;: &apos;python1807&apos;,</span><br><span class="line">    &apos;location&apos;:  &apos;18-600&apos;,</span><br><span class="line">    &apos;all_students&apos;: [</span><br><span class="line">        &#123;&apos;name&apos;: &apos;小花&apos;, &apos;age&apos;: 18, &apos;school&apos;: &apos;清华&apos;&#125;,</span><br><span class="line">        &#123;&apos;name&apos;: &apos;小红&apos;, &apos;age&apos;: 20, &apos;school&apos;: &apos;北京&apos;&#125;,</span><br><span class="line">        &#123;&apos;name&apos;: &apos;小明&apos;, &apos;age&apos;: 28, &apos;school&apos;: &apos;川大&apos;&#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>###三、函数的声明</p>
+<p>####1、什么是函数？<br>函数：函数就是对实现某一特定功能的代码段的封装<br>分类：自定义函数(程序员自己声明实现其功能)和内置函数(系统已经声明实现完成)</p>
+<p>####2、声明函数的语法<br>def 函数名(参数列表):<br>    函数体<br>说明：<br>a.def —&gt; python中声明函数的关键字<br>b.函数名 –&gt; 标识符，不能是关键字。遵守PEP8命名规范(所有字母小写，多个单词之间使用下划线隔开)<br>c.() —&gt; 固定格式<br>d.参数列表 —&gt; 形参列表，参数名1，参数名2，…<br> 可以有多个参数，也可以没有。参数是用来从函数的外部给函数里面传值用的</p>
+<p>e.: —&gt; 固定格式<br>f.函数体 —&gt; 实现函数功能的代码段</p>
+<p>####2.初学者怎么声明函数的步骤<br>a.确定函数的功能<br>b.根据功能确定函数名<br>c.确定参数：确定有没有参数，确定有几个(看实现函数功能需不需要从函数外面传值，需要传几个)<br>d.实现函数功能<br>e.确定返回值</p>
+<p>####3.函数调用<br>声明函数的时候，不会执行函数体，函数体只有在函数调用的时候才会执行<br>语法：<br>函数名(实参列表)<br>说明：<br>函数名 —&gt;必须是已经声明过的函数<br>() —&gt;固定的写法<br>实参列表 —&gt; 数据1，数据2，…(用来给形参赋值)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 写一个函数，打印两个数的和</span><br><span class="line">def yt_sum(num1, num2):</span><br><span class="line">    print(num1 + num2)</span><br><span class="line">yt_sum(10, 20)</span><br><span class="line">输出的值为：30</span><br></pre></td></tr></table></figure></p>
+<p>###四、函数的调用</p>
+<p>####1、函数调用格式<br>函数名(实参列表)</p>
+<p>####2.函数的调用过程<br>第一步：回到函数声明的位置<br>第二步：用实参给形参(传参：一定要保证每个参数都有值)<br>第三步：执行函数体<br>第四步：返回返回值<br>第五步：执行完函数体就回到函数调用的位置，接着执行后面的代码</p>
+<p>###五、函数的参数</p>
+<p>####1、位置参数和关键字参数<br>位置参数：按照实参的顺序一一给形参赋值<br>关键字参数：形参1=值1，形参2=值2，…<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">def func1(a, b, c):</span><br><span class="line">    print(&apos;a:&apos;, a, &apos;b:&apos;, b, &apos;c:&apos;, c)</span><br><span class="line"># 位置参数</span><br><span class="line">func1(10, 20, 30)   # a: 10 b: 20 c: 30</span><br><span class="line"># 关键字参数</span><br><span class="line">func1(c=300, a=100, b=200)    # a: 100 b: 200 c: 300</span><br></pre></td></tr></table></figure></p>
+<p>####2、默认函数<br>函数声明的时候可以给参数设置默认值，但是，有默认值的参数，必须放在参数列表的最后，有默认值的参数，在调用的时候可以不用传参<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">def func2(a, b, c=30):</span><br><span class="line">    print(&apos;a:&apos;, a, &apos;b:&apos;, b, &apos;c:&apos;, c)</span><br><span class="line"># a=10,b=20</span><br><span class="line">func2(10, 20)</span><br><span class="line"># a=100 b=200 c=300</span><br><span class="line">func2(100, 200, 300) </span><br><span class="line"># a: 100 b: 200 c: 300</span><br></pre></td></tr></table></figure></p>
+<p>####3、不定长参数<br>参数的个数不确定的时候，可以在形参前面加*，将形参变成一个元组，用来接收多个参数<br>注意：如果函数有多个参数，n那么不定长参数要放在最后<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"># 写一个函数，计算多个数的和</span><br><span class="line">def my_sum(*nums):</span><br><span class="line">    print(sum(nums))</span><br><span class="line"></span><br><span class="line">my_sum()</span><br><span class="line">my_sum(1)</span><br><span class="line">my_sum(1, 2, 3)</span><br><span class="line">0</span><br><span class="line">1</span><br><span class="line">6</span><br><span class="line"></span><br><span class="line">def func4(name, age, *score):</span><br><span class="line">    print(name, age, score)</span><br><span class="line">func4(&apos;小花&apos;, 18, 90, 80, 88)</span><br><span class="line"># 小花 18 (90, 80, 88)</span><br></pre></td></tr></table></figure></p>
+<p>###六、函数的调用<br>1、函数的返回值就是调用表达式的值，就是return关键字后面表达式的值<br>2、python中所有的函数都有返回值，返回值默认是None(执行函数体没有遇到return，函数的返回值就是None，遇到了return函数的返回值是return后面的值)<br>3、函数调用表达式 –&gt;调用函数的语句(函数名(实参))<br>4、return –&gt;关键字，只能写在函数体中，用来返回返回值和结束语句</p>
+<p>######注意：看一个函数的返回值，只看有没有遇到return。只要没有遇到就是return,遇到return就是return后面的值</p>
+<h2 id="作业"><a href="#作业" class="headerlink" title="作业"></a>作业</h2><h3 id="1-编写一个函数，求1-2-3-…-N"><a href="#1-编写一个函数，求1-2-3-…-N" class="headerlink" title="1. 编写一个函数，求1+2+3+…+N"></a>1. 编写一个函数，求1+2+3+…+N</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">def sum1(N):</span><br><span class="line">    sum2 = 0</span><br><span class="line">    for x in range(1, N+1):</span><br><span class="line">        N += 1</span><br><span class="line">        sum2 +=x</span><br><span class="line">    print(sum2)</span><br><span class="line">sum1(20)</span><br><span class="line"># 210</span><br></pre></td></tr></table></figure>
+<h3 id="2-编写一个函数，求多个数中的最大值"><a href="#2-编写一个函数，求多个数中的最大值" class="headerlink" title="2. 编写一个函数，求多个数中的最大值"></a>2. 编写一个函数，求多个数中的最大值</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">def max1(*number):</span><br><span class="line">    max2 = number[0]</span><br><span class="line">    for x in number:</span><br><span class="line">        if max2 &gt; x:</span><br><span class="line">           break</span><br><span class="line">        else:</span><br><span class="line">            max2 = x</span><br><span class="line">    print(&apos;max:&apos;, max2)</span><br><span class="line">max1(10, 20, 50, 80)</span><br><span class="line">#  max: 80</span><br></pre></td></tr></table></figure>
+<h3 id="3-编写一个函数，实现摇骰子的功能，打印n个骰子的点数和"><a href="#3-编写一个函数，实现摇骰子的功能，打印n个骰子的点数和" class="headerlink" title="3. 编写一个函数，实现摇骰子的功能，打印n个骰子的点数和"></a>3. 编写一个函数，实现摇骰子的功能，打印n个骰子的点数和</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">import random</span><br><span class="line">def sum3(n):</span><br><span class="line">    sum4 = 0</span><br><span class="line">    for index in range(0, n):</span><br><span class="line">        x = random.randint(1, 7)</span><br><span class="line">        sum4 += x</span><br><span class="line">    print(&apos;骰子的点数和为：&apos;, sum4)</span><br><span class="line">sum3(6)</span><br><span class="line">#  骰子的点数和为： 23</span><br></pre></td></tr></table></figure>
+<h3 id="4-编写一个函数，交换指定字典的key和value。"><a href="#4-编写一个函数，交换指定字典的key和value。" class="headerlink" title="4. 编写一个函数，交换指定字典的key和value。"></a>4. 编写一个函数，交换指定字典的key和value。</h3><h3 id="如-‘a’-1-‘b’-2-‘c’-3-—-gt-1-’a’-2-’b’-3-’c’"><a href="#如-‘a’-1-‘b’-2-‘c’-3-—-gt-1-’a’-2-’b’-3-’c’" class="headerlink" title="如:{‘a’:1, ‘b’:2, ‘c’:3} —&gt; {1:’a’, 2:’b’, 3:’c’}"></a>如:{‘a’:1, ‘b’:2, ‘c’:3} —&gt; {1:’a’, 2:’b’, 3:’c’}</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">def exchange1(dict1):</span><br><span class="line">    for key in dict1.copy():</span><br><span class="line">        # 通过key拿到值</span><br><span class="line">        value = dict1[key]</span><br><span class="line">        # 删除原来的键值对</span><br><span class="line">        del dict1[key]</span><br><span class="line">        # 将值作为key，键作为value，添加键值对</span><br><span class="line">        dict1[value] = key</span><br><span class="line">dict2 = &#123;&apos;a&apos;:1, &apos;b&apos;:2, &apos;c&apos;:3&#125;</span><br><span class="line">exchange1(dict2)</span><br><span class="line">print(dict2)</span><br><span class="line"># 交换后的字典为: &#123;1: &apos;a&apos;, 2: &apos;b&apos;, 3: &apos;c&apos;&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="5-编写一个函数，提取指定字符串中的所有的字母，然后拼接在一起后打印出来"><a href="#5-编写一个函数，提取指定字符串中的所有的字母，然后拼接在一起后打印出来" class="headerlink" title="5. 编写一个函数，提取指定字符串中的所有的字母，然后拼接在一起后打印出来"></a>5. 编写一个函数，提取指定字符串中的所有的字母，然后拼接在一起后打印出来</h3><h3 id="如-’12a-amp-bc12d–’-—-gt-打印’abcd’"><a href="#如-’12a-amp-bc12d–’-—-gt-打印’abcd’" class="headerlink" title="如:’12a&amp;bc12d–’ —&gt; 打印’abcd’"></a>如:’12a&amp;bc12d–’ —&gt; 打印’abcd’</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">def zi_mu(str1):</span><br><span class="line">    str2 = &apos;&apos;</span><br><span class="line">    for index in str1:</span><br><span class="line">        if index.isalpha():</span><br><span class="line">        # if &apos;a&apos; &lt;= index &lt;= &apos;z&apos; or &apos;A&apos; &lt; index &lt; &apos;Z&apos;:</span><br><span class="line">            str2 += index</span><br><span class="line">    print(str2)</span><br><span class="line">zi_mu(&apos;12a&amp;bc12d--&apos;)</span><br><span class="line"># abcd</span><br></pre></td></tr></table></figure>
+<h3 id="6-写一个函数，求多个数的平均值"><a href="#6-写一个函数，求多个数的平均值" class="headerlink" title="6. 写一个函数，求多个数的平均值"></a>6. 写一个函数，求多个数的平均值</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">def average(*number):</span><br><span class="line">    sum1 = 0</span><br><span class="line">    n = 0</span><br><span class="line">    for x in number:</span><br><span class="line">        sum1 += x</span><br><span class="line">        n += 1</span><br><span class="line">        ave1 = (sum1/n)</span><br><span class="line">    print(ave1)</span><br><span class="line">average(1,2,3,4,5,6,7,8,9)</span><br><span class="line"># 5.0</span><br></pre></td></tr></table></figure>
+<h3 id="7-写一个函数，默认求10的阶层，也可以求其他数的阶层"><a href="#7-写一个函数，默认求10的阶层，也可以求其他数的阶层" class="headerlink" title="7. 写一个函数，默认求10的阶层，也可以求其他数的阶层"></a>7. 写一个函数，默认求10的阶层，也可以求其他数的阶层</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">def jie_ceng(n=10):</span><br><span class="line">    sum1 = 1</span><br><span class="line">    for x in range(1, n+1):</span><br><span class="line">        sum1 *= x</span><br><span class="line">    print(sum1)</span><br><span class="line">jie_ceng()</span><br><span class="line">#  362880</span><br></pre></td></tr></table></figure>
+<h3 id="8-写一个函数，可以对多个数进行不同的运算"><a href="#8-写一个函数，可以对多个数进行不同的运算" class="headerlink" title="8. 写一个函数，可以对多个数进行不同的运算"></a>8. 写一个函数，可以对多个数进行不同的运算</h3><h3 id="如-operation-‘-’-1-2-3-—-gt-求-1-2-3的结果-operation-‘-‘-10-9-—-gt-求-10-9的结果-operation-‘‘-2-4-8-10-—-gt-求-24810的结构"><a href="#如-operation-‘-’-1-2-3-—-gt-求-1-2-3的结果-operation-‘-‘-10-9-—-gt-求-10-9的结果-operation-‘‘-2-4-8-10-—-gt-求-24810的结构" class="headerlink" title="如: operation(‘+’, 1, 2, 3) —&gt; 求 1+2+3的结果 operation(‘-‘, 10, 9) —&gt; 求 10-9的结果 operation(‘‘, 2, 4, 8, 10) —&gt; 求 24810的结构"></a>如: operation(‘+’, 1, 2, 3) —&gt; 求 1+2+3的结果 operation(‘-‘, 10, 9) —&gt; 求 10-9的结果 operation(‘<em>‘, 2, 4, 8, 10) —&gt; 求 2</em>4<em>8</em>10的结构</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">def operation(fu_hao, *n):</span><br><span class="line">    if fu_hao == &apos;+&apos;:</span><br><span class="line">        sum1 = 0</span><br><span class="line">        for x in n:</span><br><span class="line">            sum1 += x</span><br><span class="line">        print(sum1)</span><br><span class="line">    if fu_hao == &apos;-&apos;:</span><br><span class="line">        sum2 = n[0]</span><br><span class="line">        for x in range(1, len(n)):</span><br><span class="line">            sum2 -= n[x]</span><br><span class="line">        print(sum2)</span><br><span class="line">    if fu_hao == &apos;*&apos;:</span><br><span class="line">        sum3 = 1</span><br><span class="line">        for x in n:</span><br><span class="line">            sum3 *= x</span><br><span class="line">        print(sum3)</span><br><span class="line">operation(&apos;+&apos;, 1, 2, 3)   #  6</span><br><span class="line">operation(&apos;-&apos;, 10, 9) #  1</span><br></pre></td></tr></table></figure>
+<h3 id="9-写一个函数，求指定列表中，指定的元素的个数"><a href="#9-写一个函数，求指定列表中，指定的元素的个数" class="headerlink" title="9.写一个函数，求指定列表中，指定的元素的个数"></a>9.写一个函数，求指定列表中，指定的元素的个数</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">def num1(list1,n):</span><br><span class="line">    x = 0</span><br><span class="line">    for i in list1:</span><br><span class="line">        if i == n:</span><br><span class="line">            x += 1</span><br><span class="line">    return x</span><br><span class="line">print(num1([1,2,3,4,5,4,3,4,3,4],3))</span><br><span class="line"># 3</span><br></pre></td></tr></table></figure>
+<h3 id="10-写一个函数，获取指定列表中指定元素对应的下标-如果有多个，一起返回"><a href="#10-写一个函数，获取指定列表中指定元素对应的下标-如果有多个，一起返回" class="headerlink" title="10.写一个函数，获取指定列表中指定元素对应的下标(如果有多个，一起返回)"></a>10.写一个函数，获取指定列表中指定元素对应的下标(如果有多个，一起返回)</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">def index(list1,n):</span><br><span class="line">    list2 = []</span><br><span class="line">    for i in range(len(list1)):</span><br><span class="line">        if n == list1[i]:</span><br><span class="line">            list2.append(i)</span><br><span class="line">    return list2</span><br><span class="line">print(index([1,2,3,4,5,2,3,2,3,5],3))</span><br><span class="line"># [2, 6, 8]</span><br></pre></td></tr></table></figure>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+                <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>

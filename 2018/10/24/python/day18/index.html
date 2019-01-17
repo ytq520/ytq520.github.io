@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<html>
+
+<head><meta name="generator" content="Hexo 3.8.0">
+	<link rel="bookmark" type="image/x-icon" href="/img/logo_miccall.png">
+	<link rel="shortcut icon" href="/img/logo_miccall.png">
+	
+			    <title>
+    ytq520
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/css/mic_main.css">
+    <link rel="stylesheet" href="/css/dropdownMenu.css">
+    <meta name="keywords" content="miccall">
+    
+    	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	 
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css">
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+</head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css">
+<link rel="stylesheet" href="/css/typo.css">
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">ytq520</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special">
+            <ul class="menu links">
+			<!-- Homepage  主页  --> 
+			<li>
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="category-link" href="/categories/python基础/">python基础</a>
+	                    </li></ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/ytq520" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="500px" href="http://500px.com" target="_blank" rel="noopener">
+                            <i class="icon fa fa-500px"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main">
+            <div class="post_page_title_img" style="height: 25rem;background-image: url(/images/thumbs/18.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;">
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2>网络基础</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <p>###一、复习day18知识<br>1.正则符号<br>匹配字符：. \w  \s  \d  (\b, ^, $, \B) \W  \S \D  [] [^]<br>控制次数：<em> + ? {} </em>? +? ??  {N,}? {N,M}? {,N}? (在次数后加?代表次数尽可能少的去匹配)<br>分之：|<br>分组：() –&gt; 分组，捕获，重复(\数字)</p>
+<p>正则符号的转义：想要让有特殊功能的符号表示它本身，就可以通过\去转义<br>             除了\和-，其他的符号放在[]都表示符号本身</p>
+<p>2.re模块<br>compile –&gt; 将正则表达式转换成对象<br>a.匹配相关的:match, fullmatch –&gt; 返回值是匹配对象/None<br>span(), start(), end(), group(), string</p>
+<p>b.查找：search(正则表达式, 字符串) –&gt; 返回值是匹配对象/None<br>去字符串中查找满足正则表达式的子串，如果有只第一个满足条件的字符串的匹配对象</p>
+<p>findall –&gt; 获取所有满足正则条件的子串，返回一个元素是字符串的列表。如果正则中有分组，只取分组中的内容<br>finditer –&gt; 获取所有满足正则条件的子串, 返回一个迭代器，迭代器中的内容是匹配对象</p>
+<p>c.切割<br>split –&gt; 按满足正则条件的子串对字符串进行切割</p>
+<p>d.替换<br>sub(正则表达式, 替换值, 字符串)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">re_str = r&apos;\d+(a+)&apos;</span><br><span class="line">result = re.match(re_str, &apos;789aaaa=123=123&apos;)</span><br><span class="line">print(result)</span><br><span class="line"></span><br><span class="line">print(result.span(1))</span><br><span class="line">print(result.group(1))</span><br><span class="line">print(result.start(1), result.end(1))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">re_str = r&apos;\d+\.\d+&apos;</span><br><span class="line">re_str = r&apos;\d+[12\-3]\d+&apos;</span><br><span class="line">re_str = r&apos;\d+[-123]\d+&apos;</span><br><span class="line">print(re.fullmatch(re_str, &apos;12-34&apos;))</span><br><span class="line"></span><br><span class="line">re_str = r&apos;\d\d\w|\s\w+\d|\w&#123;2&#125;&apos;</span><br></pre></td></tr></table></figure></p>
+<p>###二、socket服务器<br>socket又叫套接字，实现网络通信的两端就是套接字。分为服务器对应的套接字和客户端对应的套接字</p>
+<p>python通过提供socket标准库来支持socket编程。<br>socket编程就是用程序实现服务器和客户端<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br></pre></td><td class="code"><pre><span class="line"># 1.创建服务器对应的套接字对象(买了一个座机机器)</span><br><span class="line">&quot;&quot;&quot;</span><br><span class="line">socket(family, type)</span><br><span class="line">family: 设置ip类型  AF_INET(ipv4) -&gt; 默认值   AF_INET6(ipv6) </span><br><span class="line">type：设置传输类型  SOCK_STREAM(TCP可靠传输) -&gt; 默认值   SOCK_DGRAM(UDP不可靠传输)</span><br><span class="line">&quot;&quot;&quot;</span><br><span class="line">server = socket.socket()  # 创建一个基于ipv4的可靠传输的服务器套接字</span><br><span class="line"></span><br><span class="line"># 2.绑定IP和端口（插电话线-确定电话号码）</span><br><span class="line">&quot;&quot;&quot;</span><br><span class="line">bind((ip, 端口))</span><br><span class="line">ip: 服务器的地址</span><br><span class="line">端口：不同的端口用来区分电脑上不同服务。取值范围是0~65535，注意0~1024属于著名端口(用来绑定特殊服务端口，不要随便用)</span><br><span class="line">注意：同一时间同一个端口只能绑定一个服务</span><br><span class="line">&quot;&quot;&quot;</span><br><span class="line">server.bind((&apos;10.7.156.97&apos;, 8082))</span><br><span class="line"></span><br><span class="line"># 3.监听请求（交电话费）</span><br><span class="line">&quot;&quot;&quot;</span><br><span class="line">listen(个数) --&gt; 需要通过数字设置服务器一次可以处理最大的请求个数</span><br><span class="line">&quot;&quot;&quot;</span><br><span class="line">server.listen(512)</span><br><span class="line">print(&apos;开始监听&apos;)</span><br><span class="line"></span><br><span class="line"># 4.让服务一直处于启动状态</span><br><span class="line">while True:</span><br><span class="line">    # 5.接收客户端的请求(电话响了，接电话)</span><br><span class="line">    &quot;&quot;&quot;</span><br><span class="line">    执行到accept()，程序会停下来，知道有客户端在请求这个服务器的时候才会往下执行。返回会话和客户端的地址</span><br><span class="line">    &quot;&quot;&quot;</span><br><span class="line">    print(&apos;=====&apos;)</span><br><span class="line">    conversation, addr = server.accept()</span><br><span class="line">    print(addr)</span><br><span class="line"></span><br><span class="line">    # 6.服务器给客户端发送数据（说话）</span><br><span class="line">    &quot;&quot;&quot;</span><br><span class="line">    send(data) --&gt; 发送数据</span><br><span class="line">    data: 需要发送的数据，要求是二进制数据（bytes）</span><br><span class="line">    </span><br><span class="line">    a.str 转 bytes：</span><br><span class="line">    bytes(字符串,encoding=&apos;utf-8)</span><br><span class="line">    字符串.encode(编码方式)</span><br><span class="line">    &quot;&quot;&quot;</span><br><span class="line">    # message = input(&apos;&gt;&gt;&gt;&apos;)</span><br><span class="line">    # # message_data = bytes(message, encoding=&apos;utf-8&apos;)</span><br><span class="line">    # message_data = message.encode(&apos;utf-8&apos;)</span><br><span class="line">    # conversation.send(message_data)</span><br><span class="line"></span><br><span class="line">    # 发送一张图片</span><br><span class="line">    with open(&apos;./files/luffy4.jpg&apos;, &apos;br&apos;) as f:</span><br><span class="line">        content = f.read()</span><br><span class="line">        conversation.send(content)</span><br><span class="line">        # 关闭连接</span><br><span class="line">        conversation.close()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    # 7.接收客户端发送的消息(听电话)</span><br><span class="line">    &quot;&quot;&quot;</span><br><span class="line">    recv(字节数) --&gt; 接收从客户端发送的数据，参数是用来设置一次能接收的最大字节数。返回值是接收到的数据(二进制)</span><br><span class="line">    </span><br><span class="line">    bytes 转 字符串</span><br><span class="line">    str(二进制,encoding=&apos;utf-8&apos;)</span><br><span class="line">    二进制.decode(编码方式)</span><br><span class="line">    </span><br><span class="line">    注意：recv方法也会阻塞线程，程序运行到这儿会停下等，等到对方发送消息为止</span><br><span class="line">    &quot;&quot;&quot;</span><br><span class="line">    # data = conversation.recv(1024)</span><br><span class="line">    # # re_message = str(data, encoding=&apos;utf-8&apos;)</span><br><span class="line">    # re_message = data.decode(&apos;utf-8&apos;)</span><br><span class="line">    # print(re_message)</span><br></pre></td></tr></table></figure></p>
+<p>###三、socket客户端<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">import socket</span><br><span class="line"></span><br><span class="line"># 1.创建客户端套接字对象</span><br><span class="line">client = socket.socket()</span><br><span class="line"></span><br><span class="line"># 2.连接服务器</span><br><span class="line">&quot;&quot;&quot;</span><br><span class="line">connect(地址)</span><br><span class="line">&quot;&quot;&quot;</span><br><span class="line">client.connect((&apos;10.7.156.97&apos;, 8080))</span><br><span class="line"></span><br><span class="line">while True:</span><br><span class="line">    # 4.给服务器发送消息</span><br><span class="line">    message = input(&apos;客户端:&apos;)</span><br><span class="line">    client.send(message.encode(&apos;utf-8&apos;))</span><br><span class="line">    if message == &apos;拜拜&apos;:</span><br><span class="line">        break</span><br><span class="line"></span><br><span class="line">    # 3.接收服务器返回的数据</span><br><span class="line">    re_data = client.recv(1024)</span><br><span class="line">    print(&apos;服务器:&apos;,re_data.decode(&apos;utf-8&apos;))</span><br><span class="line">    if re_data.decode(&apos;utf-8&apos;) == &apos;拜拜&apos;:</span><br><span class="line">        break</span><br></pre></td></tr></table></figure></p>
+<p>###四、socket服务器升级版<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">import socket</span><br><span class="line"></span><br><span class="line"># 1.创建服务器套接字</span><br><span class="line">server = socket.socket()</span><br><span class="line"># 2.绑定地址</span><br><span class="line">server.bind((&apos;10.7.156.97&apos;, 8080))</span><br><span class="line"># 3.监听</span><br><span class="line">server.listen(100)</span><br><span class="line"></span><br><span class="line"># 让服务器一直处于运行状态</span><br><span class="line">while True:</span><br><span class="line">    # 4.接收请求</span><br><span class="line">    conversation, addr = server.accept()</span><br><span class="line">    print(addr)</span><br><span class="line">    # 保持通话</span><br><span class="line">    while True:</span><br><span class="line">        # 接收消息</span><br><span class="line">        message_re = conversation.recv(1024).decode(&apos;utf-8&apos;)</span><br><span class="line"></span><br><span class="line">        print(&apos;客户端(%s): %s&apos; % (addr[0][-2:], message_re))</span><br><span class="line">        if message_re == &apos;拜拜&apos;:</span><br><span class="line">            break</span><br><span class="line"></span><br><span class="line">        # 发送消息</span><br><span class="line">        message = input(&apos;服务器:&apos;)</span><br><span class="line">        conversation.send(message.encode(&apos;utf-8&apos;))</span><br><span class="line">        if message == &apos;拜拜&apos;:</span><br><span class="line">            break</span><br></pre></td></tr></table></figure></p>
+<p>###五、接收图片的客户端<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">import socket</span><br><span class="line"></span><br><span class="line">client = socket.socket()</span><br><span class="line">client.connect((&apos;10.7.156.97&apos;, 8082))</span><br><span class="line"></span><br><span class="line">message_re = client.recv(1024)</span><br><span class="line">data = bytes()  # 创建一个空的二进制数据</span><br><span class="line">while message_re:</span><br><span class="line"></span><br><span class="line">    # print(message_re)</span><br><span class="line">    data += message_re  # 将每次获取到的数据叠加</span><br><span class="line">    # print(&apos;接收到数据&apos;)</span><br><span class="line">    message_re = client.recv(1024)</span><br><span class="line"></span><br><span class="line">with open(&apos;./new.jpg&apos;, &apos;bw&apos;) as f:</span><br><span class="line">    f.write(data)</span><br><span class="line">print(&apos;接收完成&apos;)</span><br></pre></td></tr></table></figure></p>
+<p>###六、requests请求<br>python没有一个标准库来支持网络请求，但是目前有一个第三方库，支持http请求<br>requests.get(url, params)  –&gt; 返回服务的响应<br>url -&gt; 请求地址<br>params -&gt; 客户端给服务发送的数据(字典) {参数名:值}<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">import requests</span><br><span class="line"># https://www.apiopen.top/satinApi?type=1&amp;page=1</span><br><span class="line">url = &apos;https://www.apiopen.top/satinApi&apos;</span><br><span class="line">response = requests.get(url, &#123;&apos;type&apos;: 1, &apos;page&apos;: 1&#125;)</span><br><span class="line"># 1.获取响应头</span><br><span class="line">print(response.headers)</span><br><span class="line"></span><br><span class="line"># 2.拿二进制形式的响应体</span><br><span class="line">data_bytes = response.content</span><br><span class="line">print(type(data_bytes))</span><br><span class="line"></span><br><span class="line"># 3.拿字符串形式的响应体</span><br><span class="line">data_text = response.text</span><br><span class="line">print(type(data_text), data_text)</span><br><span class="line"></span><br><span class="line"># 4.拿json格式对应python数据</span><br><span class="line">data_json = response.json()</span><br><span class="line">print(type(data_json), data_json[&apos;code&apos;],)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 下载图片到本地</span><br><span class="line">response = requests.get(&apos;http://wimg.spriteapp.cn/profile/large/2018/02/24/5a90448611639_mini.jpg&apos;)</span><br><span class="line">content = response.content</span><br><span class="line">with open(&apos;./aa.jpg&apos;, &apos;wb&apos;) as f:</span><br><span class="line">    f.write(content)</span><br></pre></td></tr></table></figure></p>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+                <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>

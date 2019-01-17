@@ -1,0 +1,237 @@
+<!DOCTYPE HTML>
+<html>
+
+<head><meta name="generator" content="Hexo 3.8.0">
+	<link rel="bookmark" type="image/x-icon" href="/img/logo_miccall.png">
+	<link rel="shortcut icon" href="/img/logo_miccall.png">
+	
+			    <title>
+    ytq520
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/css/mic_main.css">
+    <link rel="stylesheet" href="/css/dropdownMenu.css">
+    <meta name="keywords" content="miccall">
+    
+    	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	 
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css">
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+</head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css">
+<link rel="stylesheet" href="/css/typo.css">
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">ytq520</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special">
+            <ul class="menu links">
+			<!-- Homepage  主页  --> 
+			<li>
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="category-link" href="/categories/python基础/">python基础</a>
+	                    </li></ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/ytq520" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="500px" href="http://500px.com" target="_blank" rel="noopener">
+                            <i class="icon fa fa-500px"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main">
+            <div class="post_page_title_img" style="height: 25rem;background-image: url(/images/thumbs/17.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;">
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2>正则表达式</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <p>###一、正则表达式语法<br>正则表达式是用匹配或者描述字符串的工具。</p>
+<p>用处：<br>a.判断字符串是否满足某个条件—判断输入的字符串是否是邮箱/手机号码。是否是ip地址<br>b.提取满足条件的字符串<br>c.字符串替换</p>
+<p>python中通过re模块中相应的方法来支持正则表达式的匹配、查找和替换等功能<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">from re import fullmatch</span><br></pre></td></tr></table></figure></p>
+<p>fullmatch(正则表达式字符串, 字符串)  —&gt; 判断正则表达式和字符串是否完全匹配<br>正则表达式字符串: 就是一个字符串，字符串中是正则表达式语法。r’正则表达式’<br>正则表达式中包含两个部分，一个是正则语法对应的字符，二个是普通字符</p>
+<h4 id="1-点-匹配任意字符"><a href="#1-点-匹配任意字符" class="headerlink" title="1 .(点)(匹配任意字符)"></a>1 .(点)(匹配任意字符)</h4><p>一个.只匹配一个任意字符<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># 匹配一个长度是3的字符串，第一个字符是&apos;a&apos;, 第二个字符是任意字符，最后一个字符是b</span><br><span class="line">re_str = r&apos;a.b&apos;</span><br><span class="line">result = fullmatch(re_str, &apos;a|b&apos;)</span><br><span class="line">print(result)</span><br><span class="line"></span><br><span class="line"># 匹配一个长度是4，第一个字符和最后一个字符分别是a和b,中间两个字符是任意字符的字符串</span><br><span class="line">re_str = r&apos;a..b&apos;</span><br><span class="line">result = fullmatch(re_str, r&apos;a\nb&apos;)</span><br><span class="line">print(result)</span><br></pre></td></tr></table></figure></p>
+<h4 id="2-w-匹配字母数字下划线"><a href="#2-w-匹配字母数字下划线" class="headerlink" title="2 \w(匹配字母数字下划线)"></a>2 \w(匹配字母数字下划线)</h4><p>一个\w匹配一个字符<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 匹配一个第一个字符是数字字母或者下划线，后面三个字符是任意字符的字符串</span><br><span class="line">re_str = r&apos;\w...&apos;</span><br><span class="line">result = fullmatch(re_str, &apos;o8js&apos;)</span><br><span class="line">print(result)</span><br></pre></td></tr></table></figure></p>
+<h4 id="3-s-匹配任意空白字符"><a href="#3-s-匹配任意空白字符" class="headerlink" title="3 \s(匹配任意空白字符)"></a>3 \s(匹配任意空白字符)</h4><p>空白字符: 空格、制表符(\t)、回车(换行\n)等，都输入空白字符<br>一个\s匹配一个空白字符<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 匹配一个第一个字符是a,第二个字符是空白，最后一个字符b的字符串</span><br><span class="line">re_str = r&apos;a\sb&apos;</span><br><span class="line">result = fullmatch(re_str, &apos;a\nb&apos;)</span><br><span class="line">print(result)</span><br></pre></td></tr></table></figure></p>
+<h4 id="4-d-匹配数字字符"><a href="#4-d-匹配数字字符" class="headerlink" title="4 \d(匹配数字字符)"></a>4 \d(匹配数字字符)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">re_str = r&apos;\d\d\d&apos;</span><br><span class="line">result = fullmatch(re_str, &apos;282&apos;)</span><br><span class="line">print(result)</span><br></pre></td></tr></table></figure>
+<h1 id="5-b-检测边界"><a href="#5-b-检测边界" class="headerlink" title="5 \b(检测边界)"></a>5 \b(检测边界)</h1><p>一个\b不会去匹配一个字符，而是单纯的检测\b出现的位置是否是单词边界<br>单词边界: 字符串开始和结尾、空格、换行、标点符号等，可以将两个单词隔开的字符都单词边界<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">re_str = r&apos;\babc&apos;</span><br><span class="line">re_str = r&apos;abc\b\saaa&apos;  # 匹配一个字符串前三位是abc,第四位是空白字符，后面是aaa。并且要求c后面是单词边界</span><br><span class="line">result = fullmatch(re_str, &apos;abc aaa&apos;)</span><br><span class="line">print(result)</span><br></pre></td></tr></table></figure></p>
+<h4 id="6-检测是否是字符串开头"><a href="#6-检测是否是字符串开头" class="headerlink" title="6 ^(检测是否是字符串开头)"></a>6 ^(检测是否是字符串开头)</h4><p>re_str = r’^\d\d\d’   # 判断一个字符串是否是三个数字开头<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">result = fullmatch(re_str, &apos;123&apos;)</span><br><span class="line">print(result)</span><br></pre></td></tr></table></figure></p>
+<h4 id="7-检测是否是字符串结尾"><a href="#7-检测是否是字符串结尾" class="headerlink" title="7 $(检测是否是字符串结尾)"></a>7 $(检测是否是字符串结尾)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">re_str = r&apos;abc$&apos;</span><br><span class="line">result = fullmatch(re_str, &apos;abc&apos;)</span><br><span class="line">print(result)</span><br></pre></td></tr></table></figure>
+<h4 id="8-W-匹配非字母、数字下划线"><a href="#8-W-匹配非字母、数字下划线" class="headerlink" title="8 \W(匹配非字母、数字下划线)"></a>8 \W(匹配非字母、数字下划线)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">re_str = r&apos;\Wabc&apos;</span><br><span class="line">result = fullmatch(re_str, &apos;#abc&apos;)</span><br><span class="line">print(result)</span><br></pre></td></tr></table></figure>
+<h4 id="9-S-匹配非空白字符"><a href="#9-S-匹配非空白字符" class="headerlink" title="9 \S(匹配非空白字符)"></a>9 \S(匹配非空白字符)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">re_str = r&apos;\S...&apos;</span><br><span class="line">result = fullmatch(re_str, &apos;2jkh&apos;)</span><br><span class="line">print(result)</span><br></pre></td></tr></table></figure>
+<h4 id="10-D-匹配非数字字符"><a href="#10-D-匹配非数字字符" class="headerlink" title="10 \D(匹配非数字字符)"></a>10 \D(匹配非数字字符)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">re_str = r&apos;\D\w\w\w&apos;</span><br><span class="line">result = fullmatch(re_str, &apos;#h7_&apos;)</span><br><span class="line">print(result)</span><br></pre></td></tr></table></figure>
+<h4 id="11-B-检测是否不是单词边界"><a href="#11-B-检测是否不是单词边界" class="headerlink" title="11 \B(检测是否不是单词边界)"></a>11 \B(检测是否不是单词边界)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">re_str = r&apos;and\BYou&apos;</span><br><span class="line">result = fullmatch(re_str, &apos;andYou&apos;)</span><br><span class="line">print(result)</span><br></pre></td></tr></table></figure>
+<p>####12 [] (匹配中括号中出现的任意一个字符)</p>
+<p>一个[]匹配一个字符<br>[字符集] –&gt; 匹配一个字符，这字符是字符集中的任意一个字符<br>例如：[abc], [\d+]</p>
+<p>[字符1-字符2] –&gt; 匹配一个字符，这个字符是Unicode编码值在字符1到字符2中的任意一个字符;要求字符1的编码值要小于字符2<br>例如：[1-9] –&gt; 数字1到9  [a-z] –&gt; 小写字母  [A-Z] –&gt; 大写字母<br>[\u0031-\u0039]  –&gt; 数字1到9<br>[\u4E00-\u9fa5]  –&gt; 匹配所有的汉字</p>
+<p>注意：-在中括号中，如果放在两个字符之间表示范围。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">&quot;&quot;&quot;匹配一个字符串第一个字符是a或者b或c,后边三个a&quot;&quot;&quot;</span><br><span class="line">re_str = r&apos;[abc]aaa&apos;</span><br><span class="line">result = fullmatch(re_str, &apos;caaa&apos;)</span><br><span class="line">print(result)</span><br><span class="line"></span><br><span class="line">re_str = r&apos;[1-4]\d\d\d&apos;</span><br><span class="line">result = fullmatch(re_str, &apos;1989&apos;)</span><br><span class="line">print(result)</span><br><span class="line"></span><br><span class="line">re_str = r&apos;[\u0031-\u0039][a-z]&apos;</span><br><span class="line">result = fullmatch(re_str, &apos;1h&apos;)</span><br><span class="line">print(result)</span><br><span class="line"></span><br><span class="line">re_str = r&apos;[\u4E00-\u9fa5][\u4E00-\u9fa5][\u4E00-\u9fa5]&apos;</span><br><span class="line">result = fullmatch(re_str, &apos;就深刻&apos;)</span><br><span class="line">print(result)</span><br><span class="line"></span><br><span class="line">re_str = r&apos;[91-]&apos;</span><br><span class="line">result = fullmatch(re_str, &apos;-&apos;)</span><br><span class="line">print(result)</span><br><span class="line"></span><br><span class="line"># 匹配一个字符，是字母数字下划线或者是空白</span><br><span class="line">re_str = r&apos;[\w\s]&apos;</span><br><span class="line">result = fullmatch(re_str, &apos;u&apos;)</span><br><span class="line">print(result)</span><br></pre></td></tr></table></figure></p>
+<h4 id="13-字符集-匹配一个不在字符集中的任意字符"><a href="#13-字符集-匹配一个不在字符集中的任意字符" class="headerlink" title="13 [^字符集] (匹配一个不在字符集中的任意字符)"></a>13 [^字符集] (匹配一个不在字符集中的任意字符)</h4><p>注意：^必须放在中括号中的最前面才有效<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&quot;&quot;&quot;匹配一个四位的字符串，第一位不是abc中的任意一个，后面三位是任意字符&quot;&quot;&quot;</span><br><span class="line">re_str = r&apos;[^abc]...&apos;</span><br><span class="line">re_str = r&apos;[^1-9]...&apos;</span><br><span class="line">result = fullmatch(re_str, &apos;898i&apos;)</span><br><span class="line">print(result)</span><br></pre></td></tr></table></figure></p>
+<p>###二、正则表达式次数相关符号<br>from re import fullmatch</p>
+<h4 id="1-匹配0次或者多次"><a href="#1-匹配0次或者多次" class="headerlink" title="1. *(匹配0次或者多次)"></a>1. *(匹配0次或者多次)</h4><p>字符* –&gt; 字符出现0次或者多次<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># 匹配0位或者多位的数字字符串</span><br><span class="line">re_str = r&apos;\d*&apos;</span><br><span class="line">print(fullmatch(re_str, &apos;123&apos;))</span><br><span class="line"></span><br><span class="line"># 用一个正则表达式来检测一个标识符是否符合要求：数字字母下划线组成，数字不开头(位数至少1位)</span><br><span class="line">re_str = r&apos;[a-zA-Z_]\w*&apos;</span><br><span class="line">print(fullmatch(re_str, &apos;A&apos;))</span><br></pre></td></tr></table></figure></p>
+<h4 id="2-匹配一次或者多次"><a href="#2-匹配一次或者多次" class="headerlink" title="2. +(匹配一次或者多次)"></a>2. +(匹配一次或者多次)</h4><h1 id="匹配abc前面有一个或者多个数字的字符串"><a href="#匹配abc前面有一个或者多个数字的字符串" class="headerlink" title="匹配abc前面有一个或者多个数字的字符串"></a>匹配abc前面有一个或者多个数字的字符串</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">re_str = r&apos;\d+abc&apos;</span><br><span class="line">print(fullmatch(re_str, &apos;9abc&apos;))</span><br></pre></td></tr></table></figure>
+<h4 id="3-匹配0次或者1一次"><a href="#3-匹配0次或者1一次" class="headerlink" title="3. ?(匹配0次或者1一次)"></a>3. ?(匹配0次或者1一次)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">re_str = r&apos;a?123&apos;</span><br><span class="line">print(fullmatch(re_str, &apos;a123&apos;))</span><br></pre></td></tr></table></figure>
+<h4 id="练习：写一个正则表达式，匹配所有的整数（123-2334-9…可以匹配的，012，-023，-0122不能匹配）"><a href="#练习：写一个正则表达式，匹配所有的整数（123-2334-9…可以匹配的，012，-023，-0122不能匹配）" class="headerlink" title="练习：写一个正则表达式，匹配所有的整数（123, -2334, +9…可以匹配的，012， -023，+0122不能匹配）"></a>练习：写一个正则表达式，匹配所有的整数（123, -2334, +9…可以匹配的，012， -023，+0122不能匹配）</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">re_str = r&apos;[-+]?[1-9]\d*&apos;</span><br><span class="line">print(fullmatch(re_str, &apos;1234&apos;))</span><br></pre></td></tr></table></figure>
+<h1 id="4-指定次数"><a href="#4-指定次数" class="headerlink" title="4. {}(指定次数)"></a>4. {}(指定次数)</h1><p>{N} –&gt; 匹配N次<br>{M,N} –&gt; 匹配M到N次<br>{M,} –&gt; 至少匹配M次<br>{,N} –&gt; 最多匹配N次<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">re_str = r&apos;\d&#123;3&#125;&apos;</span><br><span class="line">print(fullmatch(re_str, &apos;123&apos;))</span><br><span class="line"></span><br><span class="line">re_str = r&apos;\d&#123;3,&#125;&apos;</span><br><span class="line">print(fullmatch(re_str, &apos;1234&apos;))</span><br><span class="line"></span><br><span class="line">re_str = r&apos;\d&#123;,3&#125;&apos;</span><br><span class="line">print(fullmatch(re_str, &apos;23&apos;))</span><br><span class="line"></span><br><span class="line">re_str = r&apos;[a-z]&#123;2,5&#125;&apos;</span><br><span class="line">print(fullmatch(re_str, &apos;aajk&apos;))</span><br><span class="line"># 判断密码是否符合要求：密码是由数字和字母组成，并且位数是6-16位</span><br><span class="line">re_str = r&apos;[\da-zA-Z]&#123;6,16&#125;&apos;</span><br></pre></td></tr></table></figure></p>
+<p>###三、分之和分组<br>import re</p>
+<h4 id="1-分之"><a href="#1-分之" class="headerlink" title="1. |(分之)"></a>1. |(分之)</h4><p>条件1|条件2 –&gt; 先用条件1去匹配，如果匹配成功就匹配成功。如果条件1匹配失败，用条件2去匹配。<br>注意：如果条件1匹配成功就不会用条件2再去匹配<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">re_str = r&apos;[a-z]&#123;3&#125;|[A-Z]&#123;3&#125;&apos;</span><br><span class="line">print(re.fullmatch(re_str, &apos;AHD&apos;))</span><br></pre></td></tr></table></figure></p>
+<p> 能匹配成功时abc，d和aaa<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">re_str = r&apos;abc|d|aaa&apos;</span><br><span class="line">print(re.fullmatch(re_str, &apos;aaa&apos;))</span><br></pre></td></tr></table></figure></p>
+<p> ‘abc’+W/H/Y<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">re_str = r&apos;abc(W|H|Y)&apos;</span><br><span class="line">print(re.fullmatch(re_str, &apos;abcY&apos;))</span><br></pre></td></tr></table></figure></p>
+<h4 id="2-分组"><a href="#2-分组" class="headerlink" title="2. ()(分组)"></a>2. ()(分组)</h4><p>a.组合(将括号中的内容作为一个整体进行操作)<br>b.捕获 – 使用带括号的正则表达式匹配成功后，只获取括号中的内容<br>c.重复 – 在正则表达式中可以通过\数字来重复前面()中匹配到的结果。数字代表前第几个分组</p>
+<h5 id="a-组合"><a href="#a-组合" class="headerlink" title="a.组合"></a>a.组合</h5><p> 匹配一个字符串，以数字字母的组合出现3次<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">re_str = r&apos;(\d[a-zA-Z])&#123;3&#125;&apos;</span><br><span class="line">print(re.fullmatch(re_str, &apos;2h8h7j&apos;))</span><br></pre></td></tr></table></figure></p>
+<p>####b.捕获<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">re_str = r&apos;(\d&#123;3&#125;)abc&apos;</span><br><span class="line">print(re.fullmatch(re_str, &apos;773abc&apos;))</span><br><span class="line">print(re.findall(re_str, &apos;euhasdhf873abcssjsja235abcu-03s834432abcjjsks&apos;))</span><br></pre></td></tr></table></figure></p>
+<p>#####c.重复<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">re_str = r&apos;([a-z]&#123;3&#125;)-(\d&#123;2&#125;)\2&apos;</span><br><span class="line">print(re.fullmatch(re_str, &apos;hsn-2323&apos;))</span><br></pre></td></tr></table></figure></p>
+<h5 id="3-转义符号"><a href="#3-转义符号" class="headerlink" title="3.转义符号"></a>3.转义符号</h5><p>正则表达式中可以通过在特殊的符号前加\，来让特殊的符号没有意义<br>. –&gt; 任意字符  . –&gt; 字符.</p>
+<ul>
+<li>–&gt; 匹配一次或者多次   + –&gt; 字符+</li>
+</ul>
+<p>注意：在中括号有特殊功能的符号，只代表符号本身<br>     \不管在哪儿都需要转义<br>     -在[]外面没有特殊功能,在[]中要表示-本身，就不要放在两个字符之间<br>     ()需要转义<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">re_str = r&apos;\d&#123;2&#125;\.\d&#123;2&#125;&apos;</span><br><span class="line">print(re.fullmatch(re_str, &apos;12=34&apos;))</span><br><span class="line"></span><br><span class="line">re_str = r&apos;\d\+\d&apos;</span><br><span class="line">print(re.fullmatch(re_str, &apos;3+7&apos;))</span><br><span class="line"></span><br><span class="line">re_str = r&apos;\(\\&apos;</span><br><span class="line">print(re.fullmatch(re_str, &apos;(\\&apos;))</span><br><span class="line"></span><br><span class="line">re_str = r&apos;(\d&#123;3&#125;)\1([a-z]&#123;2&#125;)\2\1&apos;</span><br><span class="line">print(re.fullmatch(re_str, &apos;123123bbbb123&apos;))</span><br></pre></td></tr></table></figure></p>
+<p>###四、re模块中的函数<br>import re</p>
+<h4 id="1-compile"><a href="#1-compile" class="headerlink" title="1. compile"></a>1. compile</h4><p>compile(正则表达式字符串) –&gt; 将正则表达式字符串转换成正则表达式对象<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">re_objct = re.compile(r&apos;\d+&apos;)</span><br><span class="line">print(re_objct)</span><br><span class="line">print(re_objct.fullmatch(&apos;23738&apos;))</span><br></pre></td></tr></table></figure></p>
+<h4 id="2-fullmatch和match"><a href="#2-fullmatch和match" class="headerlink" title="2. fullmatch和match"></a>2. fullmatch和match</h4><p>fullmatch(正则表达式字符串, 字符串)<br>–&gt; 用正则表达式去完全匹配字符串(匹配整个字符串)，返回匹配对象(SRE_Match)或者None</p>
+<p>match(正则表达式字符串, 字符串)<br>–&gt; 匹配字符串开头,返回匹配对象或者None<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">result = re.fullmatch(r&apos;\d([a-zA-Z]+)123&apos;, &apos;2hjdh123&apos;)</span><br><span class="line">print(result)</span><br></pre></td></tr></table></figure></p>
+<h5 id="1-span-group-0-–-gt-获取匹配成功的区间-左闭右开区间"><a href="#1-span-group-0-–-gt-获取匹配成功的区间-左闭右开区间" class="headerlink" title="1.span(group=0) –&gt; 获取匹配成功的区间(左闭右开区间)"></a>1.span(group=0) –&gt; 获取匹配成功的区间(左闭右开区间)</h5><p>print(result.span(0))<br>print(result.start(1))   # 获取匹配到的开始下标<br>print(result.end(1))     # 获取匹配到的结束下标后的下标</p>
+<h5 id="2-group-group-0-–-gt-获取匹配结果"><a href="#2-group-group-0-–-gt-获取匹配结果" class="headerlink" title="2.group(group = 0) –&gt; 获取匹配结果"></a>2.group(group = 0) –&gt; 获取匹配结果</h5><p>group()/group(0) –&gt; 获取正则表达式完全匹配的结果<br>group(index&gt;0) –&gt; 获取正则表达式中第group个分组匹配到的结果<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">print(&apos;0:&apos;,result.group())</span><br><span class="line">print(&apos;1:&apos;,result.group(1))</span><br></pre></td></tr></table></figure></p>
+<h5 id="3-string-–-gt-获取被匹配的原字符串"><a href="#3-string-–-gt-获取被匹配的原字符串" class="headerlink" title="3.string –&gt; 获取被匹配的原字符串"></a>3.string –&gt; 获取被匹配的原字符串</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">print(result.string)</span><br><span class="line">result = re.match(r&apos;\d([a-zA-Z]+)123&apos;, &apos;2hjdh123ABC&apos;)</span><br><span class="line">print(&apos;match:&apos;,result)</span><br></pre></td></tr></table></figure>
+<h4 id="3-search"><a href="#3-search" class="headerlink" title="3.search"></a>3.search</h4><p>search(正则表达式, 字符串)<br>–&gt; 查找字符串中满足正则表达式的第一个字符串。返回值是匹配对象或者None<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">result = re.search(r&apos;(\d)[a-zA-Z]+&apos;, &apos;uhsh2hdje+984nf&apos;)</span><br><span class="line">print(result.group(0))</span><br><span class="line">print(result.group(1))</span><br><span class="line">print(result.string)</span><br></pre></td></tr></table></figure></p>
+<h5 id="练习：使用search匹配出一个字符串中所有的数字字符串’abc34jshd8923jkshd9lkkk890k’-–-gt-34，8923，9，890"><a href="#练习：使用search匹配出一个字符串中所有的数字字符串’abc34jshd8923jkshd9lkkk890k’-–-gt-34，8923，9，890" class="headerlink" title="练习：使用search匹配出一个字符串中所有的数字字符串’abc34jshd8923jkshd9lkkk890k’ –&gt; 34，8923，9，890"></a>练习：使用search匹配出一个字符串中所有的数字字符串’abc34jshd8923jkshd9lkkk890k’ –&gt; 34，8923，9，890</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">re_str = r&apos;\d+&apos;</span><br><span class="line">str1 = &apos;abc34jshd8923jkshd9lkkk890k&apos;</span><br><span class="line">result = re.search(re_str, str1)</span><br><span class="line">while result:</span><br><span class="line">    print(result)</span><br><span class="line">    str1 = str1[result.end():]</span><br><span class="line">    result = re.search(re_str, str1)</span><br></pre></td></tr></table></figure>
+<h4 id="4-findall"><a href="#4-findall" class="headerlink" title="4.findall"></a>4.findall</h4><p>findall(正则表达式, 字符串) –&gt; 获取字符串中满足正则表达式的所有的子串，返回一个列表<br>注意：如果正在表达式中有分组，取值的时候只取分组中匹配到的结果;<br>    如果有多个分组，会将每个分组匹配到的结果作为一个元祖的元素<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">re_str = r&apos;(\d+)k([a-d]+)&apos;</span><br><span class="line">str1 = &apos;abc34kshd8923kabcshd9lkkk890kaa&apos;</span><br><span class="line">result = re.findall(re_str, str1)</span><br><span class="line">print(result)  # [(&apos;8923&apos;, &apos;abc&apos;), (&apos;890&apos;, &apos;aa&apos;)]</span><br><span class="line"></span><br><span class="line">re_str = r&apos;(\d+)k[a-d]+&apos;</span><br><span class="line">str1 = &apos;abc34kshd8923kabcshd9lkkk890kaa&apos;</span><br><span class="line">result = re.findall(re_str, str1)</span><br><span class="line">print(result)  # [&apos;8923&apos;, &apos;890&apos;]</span><br><span class="line"></span><br><span class="line">re_str = r&apos;\d+k[a-d]+&apos;</span><br><span class="line">str1 = &apos;abc34kshd8923kabcshd9lkkk890kaa&apos;</span><br><span class="line">result = re.findall(re_str, str1)</span><br><span class="line">print(result)  # [&apos;8923kabc&apos;, &apos;890kaa&apos;]</span><br></pre></td></tr></table></figure></p>
+<h4 id="5-finditer"><a href="#5-finditer" class="headerlink" title="5.finditer"></a>5.finditer</h4><p>finditer(正则表达式, 字符串)<br>–&gt; 查找所有满足正则条件的子串，返回值是迭代器，迭代器中的元素是匹配对象<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">re_str = r&apos;\d+&apos;</span><br><span class="line">str1 = &apos;abc34kshd8923kabcshd9lkkk890kaa&apos;</span><br><span class="line">result = re.finditer(re_str, str1)</span><br><span class="line">print(result)</span><br><span class="line">for item in result:</span><br><span class="line">    print(item)</span><br></pre></td></tr></table></figure></p>
+<h4 id="6-split"><a href="#6-split" class="headerlink" title="6. split"></a>6. split</h4><p>split(正则表达式,字符串) –&gt; 将字符串按照满足正则表达式条件的子串进行分割<br>“””<br>str1 = ‘ahsb1sssa8-jjhd7nhs+90nsjhf3-4hhh7+8kjj-‘<br>result = re.split(r’[-+]’, str1)<br>print(result)</p>
+<h4 id="7-sub"><a href="#7-sub" class="headerlink" title="7.sub"></a>7.sub</h4><p>sub(正则表达式,repl,字符串) –&gt; 将字符串中满足正则表达式条件的子串替换成repl。返回替换后的字符串<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">str1 = &apos;hsj8jskfh98ssjj8hshh&apos;</span><br><span class="line">result = re.sub(r&apos;\d+&apos;,&apos;*&apos;, str1)</span><br><span class="line">print(result)</span><br><span class="line">str1 = &apos;智      障,你在干嘛？逼, 后视镜，妈的加扣扣上&apos;</span><br><span class="line">result = re.sub(r&apos;傻\s*叉|逼|fuck|妈的|智\s*障&apos;, &apos;*&apos;, str1)</span><br><span class="line">print(result)</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">with open(&apos;./data&apos;, &apos;r&apos;, encoding=&apos;utf-8&apos;) as f:</span><br><span class="line">    content = f.read()</span><br><span class="line">    # &quot;name&quot;: &quot;搞笑精选汇&quot;</span><br><span class="line">    result = re.findall(r&apos;&quot;name&quot;:&quot;(.+?)&quot;&apos;, content)</span><br><span class="line">    print(result)</span><br></pre></td></tr></table></figure>
+<p>####day18-作业</p>
+<p> ####1. 写一个正则表达式判断一个字符串是否是ip地址<br>规则：一个ip地址由4个数字组成，每个数字之间用.连接。每个数字的大小是0-255 例如：255.189.10.37   正确 256.189.89.9    错误<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">import re</span><br><span class="line">re_str = r&apos;((\d|[1-9]\d|1\d&#123;2&#125;|2[0-4]\d|25[0-5])\.)&#123;3&#125;(\d|[1-9]\d|1\d&#123;2&#125;|2[0-4]\d|25[0-5])&apos;</span><br><span class="line">result = re.fullmatch(re_str,&apos;255.183.10.37&apos;)</span><br><span class="line">print(result)</span><br></pre></td></tr></table></figure></p>
+<h4 id="2-计算一个字符串中所有的数字的和"><a href="#2-计算一个字符串中所有的数字的和" class="headerlink" title="2. 计算一个字符串中所有的数字的和"></a>2. 计算一个字符串中所有的数字的和</h4><p> 例如：字符串是：‘hello90abc 78sjh12.5’ 结果是90+78+12.5 = 180.5<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">str1 = &apos;hello90abc 78sjh12.5&apos;</span><br><span class="line">result = re.findall(r&apos;[^a-z]+&apos;,str1)</span><br><span class="line">print(result)</span><br><span class="line">sum1 = 0</span><br><span class="line">for item in result:</span><br><span class="line">    sum1 += float(item)</span><br><span class="line">print(sum1)</span><br></pre></td></tr></table></figure></p>
+<h4 id="3-验证输入的内容只能是汉字"><a href="#3-验证输入的内容只能是汉字" class="headerlink" title="3. 验证输入的内容只能是汉字"></a>3. 验证输入的内容只能是汉字</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">re_str = r&apos;[\u4E00-\u9fa5]+&apos;</span><br><span class="line">result = re.fullmatch(re_str,&apos;你好&apos;)</span><br><span class="line">print(result)</span><br></pre></td></tr></table></figure>
+<h4 id="4-电话号码的验证"><a href="#4-电话号码的验证" class="headerlink" title="4. 电话号码的验证"></a>4. 电话号码的验证</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">re_str = r&apos;(13\d|150[0-3]|15[5-9]|17[6-8]|18[0-9])\d&#123;8&#125;&apos;</span><br><span class="line">result= re.fullmatch(re_str,&apos;15589154445&apos;)</span><br><span class="line">print(result)</span><br></pre></td></tr></table></figure>
+<h1 id="5-简单的身份证号的验证"><a href="#5-简单的身份证号的验证" class="headerlink" title="5. 简单的身份证号的验证"></a>5. 简单的身份证号的验证</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">re_str=r&apos;^[1-9]\d&#123;5&#125;(18|19|([23]\d))\d&#123;2&#125;((0[1-9])|(10|11|12))(([0-2][1-9])|10|20|30|31)\d&#123;3&#125;[0-9Xx]$&apos;</span><br><span class="line">result = re.fullmatch(re_str,&apos;510211199505181572&apos;)</span><br><span class="line">print(result)</span><br></pre></td></tr></table></figure>
+<h4 id="二、不定项选择题"><a href="#二、不定项选择题" class="headerlink" title="二、不定项选择题"></a>二、不定项选择题</h4><ol>
+<li><p>能够完全匹配字符串“(010)-62661617”和字符串“01062661617”的正则表达式包括（  A B D ）<br>A. “(?\d{3})?-?\d{8}”<br>B. “[0-9()-]+”<br>C. “[0-9(-)]<em>\d</em>”<br>D. “[(]?\d<em>[)-]</em>\d*”</p>
+<p>.    能够完全匹配字符串“c:\rapidminer\lib\plugs”的正则表达式包括（ B C ）<br>A. “c:\rapidminer\lib\plugs”<br>B. “c:\rapidminer\lib\plugs”<br>C. “(?i)C:\RapidMiner\Lib\Plugs”   ?i:将后面的内容的大写变成小写<br>D. “(?s)C:\RapidMiner\Lib\Plugs”   ?s：单行匹配</p>
+<p>.    能够完全匹配字符串“back”和“back-end”的正则表达式包括（ A B D ）<br>. “\w{4}-\w{3}|\w{4}”    match-&gt;back,back-end    fullmatch-&gt; back,back-end<br>B. “\w{4}|\w{4}-\w{3}” match-&gt; back, back  fullmatch-&gt; back,back-end<br>C. “\S+-\S+|\S+”<br>D. “\w<em>\b-\b\w</em>|\w*”</p>
+<p>.    能够完全匹配字符串“go go”和“kitty kitty”，但不能完全匹配“go kitty”的正则表达式包括（A D）<br>:\1就是重复前面第一个()/组合里面的内容<br>：\2就是重复前面第二个()/组合里面的内容<br>A. “\b(\w+)\b\s+\1\b”<br>B. “\w{2,5}\s*\1”<br>C. “(\S+) \s+\1”<br>D. “(\S{2,5})\s{1,}\1”</p>
+<p>.    能够在字符串中匹配“aab”，而不能匹配“aaab”和“aaaab”的正则表达式包括（  B C ）<br>A. “a*?b”<br>B. “a{,2}b”<br>C. “aa??b”<br>D. “aaa??b”</p>
+</li>
+</ol>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+                <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>

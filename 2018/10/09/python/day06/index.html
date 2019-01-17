@@ -1,0 +1,553 @@
+<!DOCTYPE HTML>
+<html>
+
+<head><meta name="generator" content="Hexo 3.8.0">
+	<link rel="bookmark" type="image/x-icon" href="/img/logo_miccall.png">
+	<link rel="shortcut icon" href="/img/logo_miccall.png">
+	
+			    <title>
+    ytq520
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/css/mic_main.css">
+    <link rel="stylesheet" href="/css/dropdownMenu.css">
+    <meta name="keywords" content="miccall">
+    
+    	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	 
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css">
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+</head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css">
+<link rel="stylesheet" href="/css/typo.css">
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">ytq520</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special">
+            <ul class="menu links">
+			<!-- Homepage  主页  --> 
+			<li>
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="category-link" href="/categories/python基础/">python基础</a>
+	                    </li></ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/ytq520" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="500px" href="http://500px.com" target="_blank" rel="noopener">
+                            <i class="icon fa fa-500px"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main">
+            <div class="post_page_title_img" style="height: 25rem;background-image: url(/images/thumbs/06.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;">
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2>列表</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <h4 id="一、认识列表-list"><a href="#一、认识列表-list" class="headerlink" title="一、认识列表(list)"></a>一、认识列表(list)</h4><p>1.什么是列表</p>
+<p>是python中的容器类的数据类型，可以用来存储多个数据, 可变的，有序的。</p>
+<p>可变指的是列表中的值和位置以及列表的长度可变 —&gt;决定列表可以进行增删改</p>
+<p>有序 –&gt; 决定可以通过下标来获取元素</p>
+<p>2.字面量</p>
+<p>[元素1,元素2,元素3,,…]</p>
+<p>[]  –&gt;空列表</p>
+<p>列表中的元素可以是任何类型的数据 –&gt;包括整数，布尔，浮点，字符串，字典等</p>
+<h4 id="二、获取列表元素"><a href="#二、获取列表元素" class="headerlink" title="二、获取列表元素"></a>二、获取列表元素</h4><p>1.获取单个元素</p>
+<p>列表[下标]</p>
+<p>说明：列表一旦确定，列表中每个元素的下标就确定了。下标的范围0~列表长度-1/-1~列表长度</p>
+<blockquote>
+<p>names = [‘路飞’, ‘娜美’, ‘索隆’, ‘山治’, ‘罗宾’]</p>
+<p>print(names[0], names[-4])</p>
+<p>print(names[2])</p>
+<p>输出的结果为：路飞 娜美</p>
+<p>​                          索隆</p>
+</blockquote>
+<p>2.获取部分元素(切片) —&gt;结果是个列表</p>
+<p>和字符串切片一样。</p>
+<p>列表[起始下标：结束下标] –&gt;从起始下标开始，获取到结束下标前为止</p>
+<p>列表[起始下标：结束下标：步长]</p>
+<blockquote>
+<p>print(names[1:3])</p>
+<p>print(names[:4:2])</p>
+<p>print(names[::-1])</p>
+<p>print(names[:])</p>
+<p>输出的结果为：</p>
+<p>[‘娜美’, ‘索隆’]</p>
+<p>[‘路飞’, ‘索隆’]</p>
+<p>[‘罗宾’, ‘山治’, ‘索隆’, ‘娜美’, ‘路飞’]</p>
+<p>[‘路飞’, ‘娜美’, ‘索隆’, ‘山治’, ‘罗宾’]</p>
+</blockquote>
+<h4 id="三、增删改"><a href="#三、增删改" class="headerlink" title="三、增删改"></a>三、增删改</h4><p>films = [‘绿巨人’, ‘钢铁侠’, ‘蜘蛛侠’, ‘神奇女侠’]</p>
+<p>1.增(增加元素)</p>
+<p>a.列表.append(元素)—&gt;在列表的最后添加一个元素</p>
+<blockquote>
+<p>films.append(‘美国队长’)</p>
+<p>print(films)</p>
+<p>输出的结果为：[‘绿巨人’, ‘钢铁侠’, ‘蜘蛛侠’, ‘神奇女侠’, ‘美国队长’]</p>
+</blockquote>
+<p>b.列表.insert(下标，元素)  —&gt;在指定的下标前去添加指定的元素</p>
+<blockquote>
+<p>films.insert(1, ‘雷神’)</p>
+<p>print(films)</p>
+<p>输出的结果为：[‘绿巨人’, ‘雷神’, ‘钢铁侠’, ‘蜘蛛侠’, ‘神奇女侠’, ‘美国队长’]</p>
+</blockquote>
+<p>2.删(删除列表中的元素)</p>
+<p>a.del 列表[下标]  —&gt; 删除列表中指定位置的元素、</p>
+<p>注意：del语句是python中用来删除数据的语法，可以删除任何数据</p>
+<p>b.列表.remove(元素)  —&gt;删除列表中的指定元素</p>
+<p>注意：如果这个元素在列表中有多个，只删除最前面的那一个</p>
+<blockquote>
+<p>heros=[‘盖伦’, ‘维克托’, ‘托儿索’, ‘儿童劫’]</p>
+<p>heros.remove(‘儿童劫’)</p>
+<p>print(heros)</p>
+<p>输出的结果为：[‘盖伦’, ‘维克托’, ‘托儿索’]</p>
+</blockquote>
+<p>c.列表.pop() —&gt;将列表中最后一个元素取出</p>
+<p>列表.pop(下标) —&gt;将列表中指定下标对应的元素取出</p>
+<blockquote>
+<p>beauty = [‘赵丽颖’, ‘范冰冰’, ‘周迅’, ‘杨颖’, ‘杨幂’]</p>
+<p>person = beauty.pop()</p>
+<p>print(beauty, person)</p>
+<p>person = beauty.pop(1)</p>
+<p>print(beauty, person)</p>
+<p>输出的结果为：</p>
+<p>[‘赵丽颖’, ‘范冰冰’, ‘周迅’, ‘杨颖’] 杨幂</p>
+<p>[‘赵丽颖’, ‘周迅’, ‘杨颖’] 范冰冰</p>
+</blockquote>
+<p> 3.改(修改列表中的元素)</p>
+<p>列表[下标] = 新值 —&gt;修改指定下标对应的元素</p>
+<h4 id="四、练习"><a href="#四、练习" class="headerlink" title="四、练习"></a>四、练习</h4><p>1.遍历列表中的元素</p>
+<blockquote>
+<p>numbers = [12, 34, 56, 5, 25]</p>
+<p>for x in numbers:</p>
+<p>​     print(x)</p>
+<p>for index in range(len(numbers)):</p>
+<p>​    print(index, numbers[index])</p>
+</blockquote>
+<p>1.用一个列表，保存一个班5个学生的成绩，去求整个班的学生的总成绩</p>
+<blockquote>
+<p>grade = [85, 87, 94, 89, 98]</p>
+<p>sum1 =0</p>
+<p>for y in grade:</p>
+<p>​    print(y)</p>
+<p>​    sum1 += y</p>
+<p>print(sum1)</p>
+<p>输出的结果为：453</p>
+</blockquote>
+<p>2.用一个列表，保存多个人的名字（英文的），将列表中所有人的名字首字母大写</p>
+<blockquote>
+<p>方法一</p>
+<p>names = [‘asa’, ‘Her’, ‘sher’, ‘Wu’]</p>
+<p>index =0</p>
+<p>for namein names:</p>
+<p># 取出首字母</p>
+<p>​    first = name[0]</p>
+<p># 判断首字母是否是大写</p>
+<p>​    if first.isupper():</p>
+<p>index +=1</p>
+<p>​        continue</p>
+<p>​    # 新的名字</p>
+<p>​    new_name = name.title()</p>
+<p>names[index] = new_name</p>
+<p>index +=1</p>
+<p>print(names)</p>
+<p># 方法二</p>
+<p>names = [‘asa’, ‘Her’, ‘sher’, ‘Wu’]</p>
+<p>for indexin range(len(names)):</p>
+<p>name = names[index]</p>
+<p># 判断首字母是否是小写，如果小写就变为大写</p>
+<p>​    if name[0].islower():</p>
+<p>names[index] = name.title()</p>
+<p>print(names)</p>
+<p>输出的结果为：</p>
+<p>[‘Asa’, ‘Her’, ‘Sher’, ‘Wu’]</p>
+</blockquote>
+<p># 3.删除上一个列表中，首字母是H的人的名字</p>
+<blockquote>
+<p>names = [‘asa’, ‘Her’, ‘HaHa’, ‘sher’, ‘Wu’, ‘Head’]</p>
+<p>for namein names[:]:</p>
+<p>​    if name[0] ==’H’:</p>
+<p>​        names.remove(name)</p>
+<p>   print(names)</p>
+<p># 方法二</p>
+<p>names = [‘asa’, ‘Her’, ‘HaHa’, ‘sher’, ‘Wu’, ‘Head’]</p>
+<p>index =0</p>
+<p>while index&lt;len(names)：</p>
+<p>​     name = names[index]</p>
+<p>​      if name[0] ==’H’:</p>
+<p>​          del names[index]</p>
+<p>​          continue</p>
+<p>​    index +=1</p>
+<p>print(names)</p>
+<p>输出的结果为：</p>
+<p>[‘asa’, ‘sher’, ‘Wu’]</p>
+</blockquote>
+<p># 用一个列表保存一个班的学生的成绩，删除成绩中不及格的学生</p>
+<blockquote>
+<p>scores = [23, 45, 78, 32, 90, 89, 1]</p>
+<p>for i in scores[:]:</p>
+<p>​    if i &lt;60:</p>
+<p>​        scores.remove(i)</p>
+<p>print(scores)</p>
+<p>输出的结果为：</p>
+<p>[78, 90, 89]</p>
+</blockquote>
+<h4 id="五、列表相关运算"><a href="#五、列表相关运算" class="headerlink" title="五、列表相关运算"></a>五、列表相关运算</h4><p>1.+</p>
+<p>列表1+列表2 —&gt;将列表1和列表2中的元素合并，产生一个新的列表</p>
+<p>2.*</p>
+<p>列表*n—&gt;将列表中的元素重复n次，产生一个新的列表</p>
+<p># 3.比较运算</p>
+<p>列表1 == 列表2 —&gt;判断两个列表中的元素是否相等</p>
+<p>补充：比较是否相等的两种方式，==和is</p>
+<p>一个变量有id、value和type三个·元素</p>
+<p>id –&gt;地址(数据在内存中存储的地址)</p>
+<p>value–&gt;数据的值</p>
+<p>type–&gt;数据的类型</p>
+<p>python中变量存储数据的时候存的是数据的地址（id），取出来用的值(value)</p>
+<p>== – &gt;判断的是值是否相等</p>
+<p>is –&gt;判断的地址是否相等</p>
+<h4 id="六、列表相关的方法"><a href="#六、列表相关的方法" class="headerlink" title="六、列表相关的方法"></a>六、列表相关的方法</h4><p>1.in和not in</p>
+<p>列表n in 列表2  — &gt; 列表n是否是列表2的元素</p>
+<p>列表n not in 列表2  — &gt; 列表n是否不是列表2的元素</p>
+<blockquote>
+<p>print([1, 2, 3]in [1, 2, 3, 4, 5])           # False</p>
+<p>print([1, 2, 3]in [[1, 2, 3], 2, 3, 4])      # True</p>
+</blockquote>
+<p>2.len()</p>
+<p>len(列表) —&gt;获取指定列表的长度</p>
+<blockquote>
+<p>print(len([1, 2, 3]))</p>
+<p>输出的结果为：2</p>
+</blockquote>
+<p>3.max()和minx()</p>
+<p>max()—&gt;获取列表中最大的元素</p>
+<p>min()—&gt;获取列表中最小的元素</p>
+<p>要求：a.列表中的元素类型要一致</p>
+<p>b.列表中的元素是支持&gt;操作的</p>
+<blockquote>
+<p>list1 = [1, 2, 3, 4, 5]</p>
+<p>print(‘max:’, max(list1))</p>
+<p>输出的结果为：max：5</p>
+</blockquote>
+<p>4.list()</p>
+<p>list(数据) —&gt;将指定的数据转换为列表</p>
+<p>注意：只有序列可以转换为列表</p>
+<p>序列：字符，range,列表，字典，元祖，集合，迭代器</p>
+<blockquote>
+<p>print(list(‘abcdef’))</p>
+<p>print(list(range(5)))</p>
+<p>输出的结果为：</p>
+<p>[‘a’, ‘b’, ‘c’, ‘d’, ‘e’, ‘f’]</p>
+<p>[0, 1, 2, 3, 4]</p>
+</blockquote>
+<p>5.count()</p>
+<p>列表.count(元素)—&gt;获取指定的元素在列表中的个数</p>
+<blockquote>
+<p>names = [‘千与千寻’, ‘龙猫’, ‘哈尔的移动城堡’, ‘风之谷’]</p>
+<p>print(names.count(‘千与千寻’))</p>
+<p>输出的结果为： 1</p>
+</blockquote>
+<p> 6.extend()</p>
+<p>列表.extend(序列) –&gt;将序列中的元素添加到列表中</p>
+<blockquote>
+<p>names = [‘千与千寻’, ‘龙猫’, ‘哈尔的移动城堡’, ‘风之谷’]</p>
+<p>names.extend(‘abc’)</p>
+<p>print(names)</p>
+<p>输出的结果为：</p>
+<p>[‘千与千寻’, ‘龙猫’, ‘哈尔的移动城堡’, ‘风之谷’, ‘a’, ‘b’, ‘c’]</p>
+</blockquote>
+<p> 7.index()</p>
+<p>列表.index(元素)—&gt;获取指定元素在列表中的下标</p>
+<p>注意：如果元素在列表中有多个，获取最前面的元素的下标，如果元素不存在，会报错</p>
+<p> 8.reverse()</p>
+<p>列表.reverse()  —&gt;将列表中的元素倒序</p>
+<p>9.sort()</p>
+<p>列表.sort()–&gt;将列表中得元素升序排序（从小到大）</p>
+<p>列表.sort(reverse=True)—&gt;将列表中的元素降序排序（从大到小）</p>
+<p>sorted(列表)  —&gt;将列表中的元素升序排序后生成一个新的列表（不改变原来列表）</p>
+<p>sorted(列表, reverse=True)  —&gt;将列表中的元素降序排序后生成一个新的列表(不改变原来列表)</p>
+<p>要求：a.列表中的元素类型要一致</p>
+<p>​           b.列表中的元素是支持&gt;操作的</p>
+<blockquote>
+<p>score = [12, 89, 78, 90, 78, 100]</p>
+<p>score.sort(reverse=True)</p>
+<p>print(score)</p>
+<p>score = [12, 89, 78, 90, 78, 100]</p>
+<p>new_score =sorted(score)</p>
+<p>print(score)</p>
+<p>score = [12, 89, 78, 90, 78, 100]</p>
+<p>new_score =sorted(score, reverse=True)</p>
+<p>print(score)</p>
+</blockquote>
+<p>10.clear()</p>
+<p>列表.clear() –&gt;清空列表中的元素</p>
+<p>11.copy()</p>
+<p>列表.copy() —&gt;将列表中的元素复制一份产生一个新的列表，和列表[:]的功能一样</p>
+<p> 给出一个列表：numbers = [23, 45, 78, 32, 90, 89, 123, 155, 121] </p>
+<p>1.已知一个列表，求列表中⼼心元素。</p>
+<blockquote>
+<p>numbers = [23, 45, 78, 32, 90, 89, 123, 155, 121]</p>
+<p>n =len(numbers)</p>
+<p>if n%2 !=0:</p>
+<p>​    a=n//2</p>
+<p>​    print(numbers[a-1], numbers[a])</p>
+<p>else:</p>
+<p>​      a = n/2</p>
+<p>​       print(numbers[a])</p>
+<p>输出的结果为：32 90</p>
+</blockquote>
+<p>2.已知一个列表，求所有元素和。</p>
+<blockquote>
+<p>sum1=0</p>
+<p>for xin numbers:</p>
+<p>​      sum1 += x</p>
+<p>print(sum1)</p>
+<p>输出的结果为：756</p>
+</blockquote>
+<p>3.已知一个列表，输出所有奇数下标元素。</p>
+<blockquote>
+<p>numbers = [23, 45, 78, 32, 90, 89, 123, 155, 121]</p>
+<p>n = []            #添加一个空列表</p>
+<p>for i in range(0, len(numbers)):</p>
+<p>​       if numbers[i] %2:</p>
+<p>​       n.append(i)</p>
+<p>print(n)</p>
+<p>输出的结果为：</p>
+<p>[0, 1, 5, 6, 7, 8]</p>
+</blockquote>
+<p>4.已知一个列表，输出所有元素中，值为奇数的。</p>
+<blockquote>
+<p>list1 = []</p>
+<p>for iin numbers[:]:</p>
+<p>​       if i %2:</p>
+<p>​           list1.append(i)</p>
+<p>print(list1)</p>
+<p>输出的结果为：</p>
+<p>[23, 45, 89, 123, 155, 121]</p>
+</blockquote>
+<p>5.已知一个列表，将所有元素乘⼆。</p>
+<blockquote>
+<p>list2 = []</p>
+<p>for iin numbers[:]:</p>
+<p>​       list2.append(i *2)</p>
+<p>print(list2)</p>
+<p>输出的结果为：</p>
+<p>[46, 90, 156, 64, 180, 178, 246, 310, 242]</p>
+</blockquote>
+<p>6.已知一个列表，将所有元素加到第一个元素中。</p>
+<blockquote>
+<p>list3 = numbers</p>
+<p>sum1 =0</p>
+<p>for x in numbers:</p>
+<p>​    sum1 += x</p>
+<p>​    list3[0] = sum1</p>
+<p>print(list3)</p>
+<p>输出的结果为：</p>
+<p>[756, 45, 78, 32, 90, 89, 123, 155, 121]</p>
+</blockquote>
+<p>7.已知一个列表A，将奇数位置元素存到B列表中，偶数元素存到C列表中。</p>
+<blockquote>
+<p>B= numbers[1::2]</p>
+<p>C= []</p>
+<p>for  i in numbers[:]:</p>
+<p>​    if not i %2 :</p>
+<p>​       C.append(i)</p>
+<p>print(B, C)</p>
+<p>输出的结果为：</p>
+<p>[45, 89, 123, 155, 121] [756, 78, 32, 90]</p>
+</blockquote>
+<p>8.把A列表的前5个元素复制到B列表中。</p>
+<blockquote>
+<p>list2 = []</p>
+<p>for i  in numbers[0:5]:</p>
+<p>​     list2.append(i)</p>
+<p>print(list2)</p>
+</blockquote>
+<p>10.有一个长度是10的列表，列表内有10个不重复的数字，要求按从大到小排序。</p>
+<blockquote>
+<p>numbers = [23, 45, 78, 32, 90, 89, 123, 155, 121, 152]</p>
+<p>numbers.sort(reverse=True)</p>
+<p>print(numbers)</p>
+<p>输出的结果为：</p>
+<p>[155, 152, 123, 121, 90, 89, 78, 45, 32, 23]</p>
+</blockquote>
+<p>11.有一个长度是10的列表，要求删除某一个位置的元素</p>
+<blockquote>
+<p>numbers = [23, 45, 78, 32, 90, 89, 123, 155, 121, 152]</p>
+<p>del numbers[4]</p>
+<p>print(numbers)</p>
+<p>输出的结果为：</p>
+<p>[23, 45, 78, 32, 89, 123, 155, 121, 152]</p>
+</blockquote>
+<p>12.有一个长度是10的列表，按递增排列，用户输⼊一个数，插入适当位置。</p>
+<blockquote>
+<p>numbers = [23, 45, 78, 32, 90, 89, 123, 155, 121, 152]</p>
+<p>numbers.sort()</p>
+<p>print(numbers)</p>
+<p>n = int(input(‘请输入一个数字:’))</p>
+<p>if n &lt;numbers[0]:</p>
+<p>​    numbers.insert(0,n)</p>
+<p>else:</p>
+<p>​    for i  in range(1,len(numbers)):</p>
+<p>​        if numbers[i-1] &lt; n &lt; numbers[i]:</p>
+<p>​            numbers.insert(i,n)</p>
+<p>print(numbers)</p>
+<p>输出的结果为：</p>
+<p>请输入一个数字：45</p>
+<p>[23, 32, 45, 78, 90, 121, 123, 152, 155] </p>
+</blockquote>
+<p>13.有一个长度是10的列表，数组内有10个人名，要求去掉重复的</p>
+<blockquote>
+<p>names= [‘小明’,’小花’,’小红’,’小强’,’张三’,’李四’,’王五’,’小花’,’张三’,’小明’, ‘张三’]</p>
+<p>list = []</p>
+<p>for name in names:</p>
+<p>if name not in list:</p>
+<p>names.append(name)</p>
+<p>print(list)</p>
+<p>输出的结果为：</p>
+<p>[‘小明’, ‘小花’, ‘小红’, ‘小强’, ‘张三’, ‘李四’, ‘王五’]</p>
+</blockquote>
+<p>14.把A列表的第三到第六位之间的元素删除。</p>
+<blockquote>
+<p>A =[1, 2, 3, 4, 5 ,6, 7, 8, 9]</p>
+<p>for x in A[3:5]:</p>
+<p>   A.append(x)</p>
+<p>print(A)</p>
+</blockquote>
+<p>15.已知A列表，B列表，定义一个列表C，要求C包含A,B数组B的数据（⽆无重复值）。</p>
+<blockquote>
+<p>A = [21,33,23,34,55,66,34,76,21,44]</p>
+<p>B = [22,33,44,55,66,77,88,99,33,44]</p>
+<p>C = []</p>
+<p>for x in A:</p>
+<p>if x not in C:</p>
+<p>C.append(x)</p>
+<p>for i in B:</p>
+<p>if i not in C:</p>
+<p>C.append(i)</p>
+<p>print(C)</p>
+</blockquote>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+                <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>
