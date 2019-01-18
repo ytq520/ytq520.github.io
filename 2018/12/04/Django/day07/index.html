@@ -1,0 +1,427 @@
+<!DOCTYPE HTML>
+<html>
+
+<head><meta name="generator" content="Hexo 3.8.0">
+	<link rel="bookmark" type="image/x-icon" href="/img/logo_miccall.png">
+	<link rel="shortcut icon" href="/img/logo_miccall.png">
+	
+			    <title>
+    ytq520
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/css/mic_main.css">
+    <link rel="stylesheet" href="/css/dropdownMenu.css">
+    <meta name="keywords" content="miccall">
+    
+    	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	 
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css">
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+</head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css">
+<link rel="stylesheet" href="/css/typo.css">
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">ytq520</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special">
+            <ul class="menu links">
+			<!-- Homepage  主页  --> 
+			<li>
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="category-link" href="/categories/Django/">Django</a></li><li><a class="category-link" href="/categories/JavaScript/">JavaScript</a></li><li><a class="category-link" href="/categories/MySQL/">MySQL</a></li><li><a class="category-link" href="/categories/html/">html</a></li><li><a class="category-link" href="/categories/python基础/">python基础</a>
+	                    </li></ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/ytq520" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="500px" href="http://500px.com" target="_blank" rel="noopener">
+                            <i class="icon fa fa-500px"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main">
+            <div class="post_page_title_img" style="height: 25rem;background-image: url(/images/thumbs/13.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;">
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2>djangorestframework总结</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>django-rest-framework,是一套基于Django 的 REST 框架，是一个强大灵活的构建 Web API 的工具包。 使用django-rest-framework实现前后分离。</p>
+<h3 id="rest总结目录"><a href="#rest总结目录" class="headerlink" title="rest总结目录"></a>rest总结目录</h3><ol>
+<li><p>安装与配置</p>
+</li>
+<li><p>模型定义</p>
+</li>
+<li><p>路由</p>
+</li>
+<li><p>视图</p>
+</li>
+<li><p>序列化</p>
+</li>
+<li><p>条件过滤</p>
+</li>
+<li><p>增删改查方法自定义</p>
+</li>
+<li><p>to_representation方法</p>
+</li>
+<li><p>get_queryset方法</p>
+</li>
+<li><p>get_object方法 </p>
+</li>
+</ol>
+<h3 id="1-安装与配置"><a href="#1-安装与配置" class="headerlink" title="1. 安装与配置"></a>1. 安装与配置</h3><p>1）安装djangorestframework</p>
+<pre><code>pip install djangorestframework==3.4.6
+</code></pre><p>2） 安装过滤</p>
+<pre><code>pip install django-filter
+</code></pre><p>3）配置settings.py文件</p>
+<p>在工程目录中的settings.py文件的INSTALLED_APPS中需要添加rest_framework</p>
+<pre><code>INSTALLED_APPS = [
+    ...
+
+    &apos;rest_framework&apos;,
+]
+</code></pre><h3 id="2-模型定义"><a href="#2-模型定义" class="headerlink" title="2. 模型定义"></a>2. 模型定义</h3><p>定义文章模型类和文章分类的模型类，并指定分类和文章之间的一对多的关联关系</p>
+<pre><code>from django.db import models
+</code></pre><p>​<br>    class Atype(models.Model):<br>        t_name = models.CharField(max_length=10)</p>
+<pre><code>class Meta:
+    db_table = &apos;a_type&apos;
+</code></pre><p>​<br>    class Article(models.Model):<br>        title = models.CharField(max_length=10)<br>        desc = models.CharField(max_length=100)<br>        content = models.TextField()<br>        is_delete = models.BooleanField(default=0)<br>        create_time = models.DateTimeField(auto_now_add=True)<br>        atype = models.ForeignKey(Atype, null=True)</p>
+<pre><code>class Meta:
+    db_table = &apos;article&apos;
+</code></pre><h3 id="3-路由"><a href="#3-路由" class="headerlink" title="3. 路由"></a>3. 路由</h3><p>定义路由需要注意：</p>
+<p>使用router.register注册的url为资源，而且资源只能为名词不能为动词。</p>
+<p>定义的资源不要加’/‘斜杠，在访问地址的时候，URL中会默认的添加反斜杠’/‘</p>
+<pre><code>from django.conf.urls import url
+
+from rest_framework.routers import SimpleRouter
+
+# 导入应用article中的views.py文件
+from article import views
+</code></pre><p>​    </p>
+<pre><code># 生成路由对象
+router = SimpleRouter()
+# 路由管理资源art
+router.register(&apos;art&apos;, views.ArticleView)
+
+urlpatterns = [
+    url(r&apos;list/&apos;, views.list_art),
+]
+# router.urls生成资源对应的路由地址
+# 例如地址: /art/ 、 /art/id/
+urlpatterns += router.urls
+</code></pre><h3 id="4-视图"><a href="#4-视图" class="headerlink" title="4. 视图"></a>4. 视图</h3><p>定义基于类的视图ArticleView，可以通过继承父类来实现创建/检索/更新/删除等操作，而开发者只需要轻松地构造可重复使用的行为即可。而这些常见的创建/检索/更新/删除等操作是在REST框架的mixin类中实现的。</p>
+<p>如下定义基于类的视图ArticleView，视图中实现序列化类ArticleSerializer和过滤类ArticleFiler:</p>
+<pre><code>from rest_framework import mixins, viewsets
+
+from article.article_filter import ArticleFiler
+from article.article_serializer import ArticleSerializer
+from article.models import Article
+</code></pre><p>​<br>    class ArticleView(viewsets.GenericViewSet,<br>                      mixins.ListModelMixin,<br>                      mixins.DestroyModelMixin,<br>                      mixins.CreateModelMixin,<br>                      mixins.UpdateModelMixin,<br>                      mixins.RetrieveModelMixin):</p>
+<pre><code># 查询返回的数据
+queryset = Article.objects.filter(is_delete=0)
+# 序列化返回的文章数据
+serializer_class = ArticleSerializer
+# 过滤
+filter_class = ArticleFiler
+</code></pre><p>分析:</p>
+<p><b>queryset</b>:指明在查询数据时使用的查询集。</p>
+<p><b>serializer_class</b>:指明该视图在进行序列化或反序列化时使用的序列化器。</p>
+<p><b>filter_class</b>: 指明过滤URL中传递参数的过滤器。</p>
+<h3 id="5-序列化"><a href="#5-序列化" class="headerlink" title="5. 序列化"></a>5. 序列化</h3><p>定义序列化模型的ArticleSerializer类，并继承于serializers.ModelSerializer。其中可以自定义序列化字段的最大长度max_length和最小长度min_length以及错误信息的自定义error_messages。而fields字段表示序列化后用于展示的字段。</p>
+<pre><code>from rest_framework import serializers
+
+from article.models import Article
+</code></pre><p>​<br>    class ArticleSerializer(serializers.ModelSerializer):<br>        desc = serializers.CharField(min_length=10,<br>                                     max_length=100,<br>                                     error_messages={<br>                                         ‘required’: ‘描述必填’,<br>                                         ‘max_length’: ‘描述不超过100字符’,<br>                                         ‘min_length’: ‘描述不少于10字符’<br>                                     })<br>        title = serializers.CharField(max_length=10,<br>                                      error_messages={<br>                                          ‘required’: ‘标题必填’,<br>                                      })<br>        content = serializers.CharField(min_length=10,<br>                                        error_messages={<br>                                          ‘required’: ‘内容必填’,<br>                                        })</p>
+<pre><code>class Meta:
+    # 序列化的模型
+    model = Article
+    # 需要序列化的字段
+    fields = [&apos;title&apos;, &apos;desc&apos;, &apos;content&apos;, &apos;id&apos;, &apos;atype&apos;]
+</code></pre><p>分析:</p>
+<p><b>model</b>: 指明该序列化器处理的数据字段从模型类Article参考生成。</p>
+<p><b>fields</b>: 指明该序列化器包含模型类中的哪些字段，’<strong>all</strong>‘指明包含所有字段。</p>
+<h3 id="6-条件过滤"><a href="#6-条件过滤" class="headerlink" title="6. 条件过滤"></a>6. 条件过滤</h3><p>定义过滤模型的ArticleFiler类，并继承与filters.FilterSet。如下定义过滤的字段title、desc、content、min_time、max_time，且过滤的title、desc、content为模糊搜索。</p>
+<p>定义如下的过滤字段，搜索的URL定义如下所示：</p>
+<p><a href="http://127.0.0.1/xxx/art/?title=小明&amp;desc=django&amp;content=学习&amp;max_time=2018-12-12&amp;min_time=2018-11-11。该URL表名模糊搜索标题title、desc、content，且创建时间大于2018-11-11且创建时间小于2018-12-12" target="_blank" rel="noopener">http://127.0.0.1/xxx/art/?title=小明&amp;desc=django&amp;content=学习&amp;max_time=2018-12-12&amp;min_time=2018-11-11。该URL表名模糊搜索标题title、desc、content，且创建时间大于2018-11-11且创建时间小于2018-12-12</a></p>
+<pre><code>from rest_framework import filters
+import django_filters
+
+from article.models import Article
+</code></pre><p>​<br>    class ArticleFiler(filters.FilterSet):</p>
+<pre><code># 过滤URL中title参数
+title = django_filters.CharFilter(&apos;title&apos;, lookup_expr=&apos;contains&apos;)
+# 过滤URL中的desc参数
+desc = django_filters.CharFilter(&apos;desc&apos;, lookup_expr=&apos;contains&apos;)
+# 过滤URL中的content参数
+content = django_filters.CharFilter(&apos;content&apos;, lookup_expr=&apos;contains&apos;)
+# 过滤URL中时间最小值min_time
+min_time = django_filters.DateTimeFilter(&apos;create_time&apos;, lookup_expr=&apos;gt&apos;)
+# 过滤URL中时间最大值max_time
+max_time = django_filters.DateTimeFilter(&apos;create_time&apos;, lookup_expr=&apos;lt&apos;)
+
+class Meta:
+    model = Article
+    fields = [&apos;title&apos;, &apos;desc&apos;, &apos;content&apos;, &apos;create_time&apos;]
+</code></pre><h3 id="7-增删改查方法自定义"><a href="#7-增删改查方法自定义" class="headerlink" title="7. 增删改查方法自定义"></a>7. 增删改查方法自定义</h3><p>mixins在djangorestframework中主要配合viewsets共同使用，实现http方法与mixins的相关类与方法进行关联。djangorestframework中有5类Minxin，他们与http方法对应如下:</p>
+<p><a href="https://github.com/coco369/knowledge/blob/master/django/images/drf_mixins.png" target="_blank" rel="noopener">图片</a></p>
+<h4 id="1-CreateModelMixin"><a href="#1-CreateModelMixin" class="headerlink" title="1) CreateModelMixin"></a>1) CreateModelMixin</h4><p>源码:</p>
+<pre><code>class CreateModelMixin(object):
+    &quot;&quot;&quot;
+    Create a model instance ==&gt;创建一个实例
+    &quot;&quot;&quot;
+    def create(self, request, *args, **kwargs):
+
+    # 获取相关serializer
+        serializer = self.get_serializer(data=request.data)
+
+        # 进行serializer的验证
+        # raise_exception=True,一旦验证不通过，不再往下执行，直接引发异常
+        serializer.is_valid(raise_exception=True)
+
+        # 调用perform_create()方法，保存实例
+        self.perform_create(serializer)
+
+        headers = self.get_success_headers(serializer.data)
+        return Response(serializer.data, status=status.HTTP_201_CREATED, headers=headers)
+
+    def perform_create(self, serializer):
+    # 保存实例
+        serializer.save()
+
+    def get_success_headers(self, data):
+        try:
+            return {&apos;Location&apos;: str(data[api_settings.URL_FIELD_NAME])}
+        except (TypeError, KeyError):
+            return {}
+</code></pre><p>创建的逻辑思路图如下:</p>
+<p><a href="https://github.com/coco369/knowledge/blob/master/django/images/drf_create.png" target="_blank" rel="noopener">图片</a></p>
+<p>分析: 由上图可以看出这个类的一个逻辑，其中，perform_create( )对serializer直接进行save保存，当在一些情境下，我们需要对perform_create( )进行重写。 </p>
+<p>那么我们现在可能有一个下面的需要： </p>
+<p>假设现在有一个course课程model，里面维持了一个数，记录课程收藏数，还存在一个用户收藏userfav的model(外键course指向课程模型)，当一个用户对课程进行收藏，理论上现在post进来的应该是userfav的instance，显然，我们还需要对相应course的收藏数fav_num进行+1。<br>　　这个时候，我们就需要重写perform_create( )方法！</p>
+<pre><code>def perform_create(self, serializer):
+    # 重写save的逻辑
+    instance = serializer.save()
+    course = instance.course
+    course.fav_num += 1
+    course.save()
+</code></pre><h4 id="2-ListModelMixin"><a href="#2-ListModelMixin" class="headerlink" title="2) ListModelMixin"></a>2) ListModelMixin</h4><p>源码:</p>
+<pre><code>class ListModelMixin(object):
+    &quot;&quot;&quot;
+    List a queryset.==&gt; 列表页获取
+    &quot;&quot;&quot;
+    def list(self, request, *args, **kwargs):
+        queryset = self.filter_queryset(self.get_queryset())
+
+        # 这是一个分页功能，如果在viewset中设置了pagination_class，那么这里就会起作用
+        # 获取当前页的queryset，如果不存在分页，返回None
+        page = self.paginate_queryset(queryset)
+
+        if page is not None:
+        # 分页不为空，那么不能简单的执行Response(serializer.data)
+        # 还需要将相关的page信息序列化在进行响应
+            serializer = self.get_serializer(page, many=True)
+            return self.get_paginated_response(serializer.data)
+
+        serializer = self.get_serializer(queryset, many=True)
+        return Response(serializer.data)
+</code></pre><p>分析: ListModelMixin一般用来获取列表页，大多数情况下比较简单，不需要重写相关的方法。</p>
+<h4 id="3-RetrieveModelMixin"><a href="#3-RetrieveModelMixin" class="headerlink" title="3) RetrieveModelMixin"></a>3) RetrieveModelMixin</h4><p>源码:</p>
+<pre><code>class RetrieveModelMixin(object):
+    &quot;&quot;&quot;
+    Retrieve a model instance.==&gt; 获取某一个对象的具体信息
+    &quot;&quot;&quot;
+    def retrieve(self, request, *args, **kwargs):
+        # 一般访问的url都为/obj/id/这种新式
+        # get_object()可以获取到这个id的对象
+        instance = self.get_object()
+        serializer = self.get_serializer(instance)
+        return Response(serializer.data)
+</code></pre><p>分析: 访问的URL都为/obj/id/这种新式才会调用该retrieve方法，其中get_object()可以获取到这个id的对象。开发中对retrieve这个方法的重写几率比较高，例如我们在增加点击数的时候，经常要对其进行一个重写。</p>
+<h4 id="4-UpdateModelMixin"><a href="#4-UpdateModelMixin" class="headerlink" title="4) UpdateModelMixin"></a>4) UpdateModelMixin</h4><p>源码:</p>
+<pre><code>class UpdateModelMixin(object):
+    &quot;&quot;&quot;
+    Update a model instance.==&gt; 更新某个具体对象的内容
+    &quot;&quot;&quot;
+    def update(self, request, *args, **kwargs):
+        partial = kwargs.pop(&apos;partial&apos;, False)
+        instance = self.get_object()
+        serializer = self.get_serializer(instance, data=request.data, partial=partial)
+        serializer.is_valid(raise_exception=True)
+        self.perform_update(serializer)
+
+        if getattr(instance, &apos;_prefetched_objects_cache&apos;, None):
+            # If &apos;prefetch_related&apos; has been applied to a queryset, we need to
+            # forcibly invalidate the prefetch cache on the instance.
+            instance._prefetched_objects_cache = {}
+
+        return Response(serializer.data)
+
+    def perform_update(self, serializer):
+        serializer.save()
+
+    def partial_update(self, request, *args, **kwargs):
+        kwargs[&apos;partial&apos;] = True
+        return self.update(request, *args, **kwargs)
+</code></pre><p>分析: UpdateModelMixin实现逻辑基本整合了Create以及Retrieve，先得到具体的实例，再对其进行验证以及保存，如果需要对更新这个逻辑进行自定义，那么需要重写perform_update( )方法，而尽量少去重写update( )</p>
+<h4 id="5-DestroyModelMixin"><a href="#5-DestroyModelMixin" class="headerlink" title="5) DestroyModelMixin"></a>5) DestroyModelMixin</h4><p>源码:</p>
+<pre><code>class DestroyModelMixin(object):
+    &quot;&quot;&quot;
+    Destroy a model instance.
+    &quot;&quot;&quot;
+    def destroy(self, request, *args, **kwargs):
+        instance = self.get_object()
+        self.perform_destroy(instance)
+        return Response(status=status.HTTP_204_NO_CONTENT)
+
+    def perform_destroy(self, instance):
+        instance.delete()
+</code></pre><p>DestroyModelMixin的逻辑也相对比较简单，当删除文章对象数据时，通过修改模型中的定义的is_delete字段，将is_delete字段置为1表示删除数据。因此重构perform_destroy方法，如下:</p>
+<pre><code>def perform_destroy(self, instance):
+    instance.is_delete = 1
+    instance.save()
+</code></pre><h3 id="8-to-representation方法"><a href="#8-to-representation方法" class="headerlink" title="8. to_representation方法"></a>8. to_representation方法</h3><p>概念:序列化器的每个字段实际都是由该字段类型的to_representation方法决定格式的，可以通过重写该方法来决定格式。</p>
+<p>如下重定义to_representation方法，把每一列数据（其中instance代表每一列数据）进行修改重组，然后返回，如下示例将返回文章的类型字段进行修改再填充回数据中进行返回。</p>
+<pre><code>from rest_framework import serializers
+
+from article.models import Article
+</code></pre><p>​<br>    class ArticleSerializer(serializers.ModelSerializer):<br>        desc = serializers.CharField(min_length=10,<br>                                     max_length=100,<br>                                     error_messages={<br>                                         ‘required’: ‘描述必填’,<br>                                         ‘max_length’: ‘描述不超过100字符’,<br>                                         ‘min_length’: ‘描述不少于10字符’<br>                                     })<br>        title = serializers.CharField(max_length=10,<br>                                      error_messages={<br>                                          ‘required’: ‘标题必填’,<br>                                      })<br>        content = serializers.CharField(min_length=10,<br>                                        error_messages={<br>                                          ‘required’: ‘内容必填’,<br>                                        })</p>
+<pre><code>class Meta:
+    # 序列化的模型
+    model = Article
+    # 需要序列化的字段
+    fields = [&apos;title&apos;, &apos;desc&apos;, &apos;content&apos;, &apos;id&apos;, &apos;atype&apos;]
+
+def to_representation(self, instance):
+    # 序列化是会默认调用该方法，返回的结果为当前instance对象的序列化结果
+    data = super().to_representation(instance)
+    if instance.atype:
+        data[&apos;atype&apos;] = instance.atype.t_name
+    return data
+</code></pre><h3 id="9-get-queryset方法"><a href="#9-get-queryset方法" class="headerlink" title="9. get_queryset方法"></a>9. get_queryset方法</h3><p>get_queryset(self)：返回视图使用的查询集，是列表视图与详情视图获取数据的基础，默认返回queryset属性，可以重写，例如对查询结果集进行再次过滤，可是如下重写：</p>
+<pre><code>def get_queryset(self):
+    queryset = self.queryset
+    return queryset.filter(title__contains=&apos;django学习day01&apos;)
+</code></pre><h3 id="10-get-object方法"><a href="#10-get-object方法" class="headerlink" title="10. get_object方法"></a>10. get_object方法</h3><p>get_object(self): 返回详情视图所需的模型类数据对象。 在视图中可以调用该方法获取详情信息的模型类对象。</p>
+<p>若详情访问的模型类对象不存在，会返回404。</p>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+                <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>
